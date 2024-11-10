@@ -30,6 +30,9 @@
 - **Config Service**: 
   De Config Service beheert configuratie-instellingen voor de verschillende microservices, zoals `post-service.yml`, `review-service.yml`, en `comment-service.yml`, waardoor de configuraties centraal kunnen worden beheerd.
 
+- **Notification Service**: 
+  De redacteur krijgt een melding wanneer een post goedgekeurd of afgekeurd is.
+
 - **Message Bus**: 
   De Message Bus wordt gebruikt voor asynchrone communicatie tussen de verschillende microservices. Dit is in het geval van de PostService en ReviewService aangezien een post eerst nog moet goedgekeurd worden en dit kan     enige tijd duren, dus gebeurt dit asynchroon.
 
