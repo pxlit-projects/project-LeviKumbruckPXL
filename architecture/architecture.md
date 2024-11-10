@@ -1,3 +1,3 @@
 # Architecture
 
-![Architecture Diagram](./Java Architecture.png)
+![Architecture Diagram](./JavaArchitecture.png)
