@@ -1,1 +1,59 @@
 # This file will contain a script in orde to start up the system (all microservices) 
+
+version: '3.9'
+services:
+  mysql-comment:
+    image: mysql:8.0
+    container_name: mysql-comment
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: commentservice_db
+      MYSQL_USER: student
+      MYSQL_PASSWORD: student
+    ports:
+      - "3306:3306" 
+    volumes:
+      - mysql-comment-data:/var/lib/mysql
+    networks:
+      - microservices-network
+
+  mysql-post:
+    image: mysql:8.0
+    container_name: mysql-post
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: postservice_db
+      MYSQL_USER: student
+      MYSQL_PASSWORD: student
+    ports:
+      - "3307:3306" 
+    volumes:
+      - mysql-post-data:/var/lib/mysql
+    networks:
+      - microservices-network
+
+  mysql-review:
+    image: mysql:8.0
+    container_name: mysql-review
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: reviewservice_db
+      MYSQL_USER: student
+      MYSQL_PASSWORD: student
+    ports:
+      - "3308:3306" 
+    volumes:
+      - mysql-review-data:/var/lib/mysql
+    networks:
+      - microservices-network
+
+volumes:
+  mysql-comment-data:
+  mysql-post-data:
+  mysql-review-data:
+
+networks:
+  microservices-network:

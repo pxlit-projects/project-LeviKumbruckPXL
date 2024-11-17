@@ -1,0 +1,4 @@
+1. start config-service
+2. start discovery-service
+3. start gateway-service
+4. dan de rest

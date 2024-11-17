@@ -27,6 +27,7 @@
         <module>comment-service</module>
         <module>discovery-service</module>
         <module>config-service</module>
+        <module>gateway-service</module>
     </modules>
     <scm>
         <connection/>
@@ -76,10 +77,7 @@
 
 
 
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
+
 
 
 
