@@ -1,23 +1,27 @@
 package be.pxl.services.services;
 
-import be.pxl.services.api.dto.PostDto;
+import be.pxl.services.api.dto.PostRequest;
+import be.pxl.services.api.dto.PostResponse;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.List;
 
 public interface IPostService {
 
+    List<PostResponse> getAllPosts();
 
-    List<PostDto> getAllPosts();
+    PostResponse addPost(PostRequest postRequest);
 
+    PostResponse saveAsDraft(PostRequest postRequest);
 
-    PostDto getPostById(Long id);
+    List<PostResponse> getDraftsByRedactor(String redactor);
 
+    PostResponse updateDraft(Long postId, PostRequest postRequest);
 
-    PostDto createPost(PostDto postDto);
+    PostResponse publishDraft(Long id);
 
+    List<PostResponse> filterPosts(String content, String redactor, LocalDate createdDate);
 
-    PostDto updatePost(Long id, PostDto postDto);
-
-
-    void deletePost(Long id);
+    PostResponse updatePost(Long id, PostRequest postRequest);
 }

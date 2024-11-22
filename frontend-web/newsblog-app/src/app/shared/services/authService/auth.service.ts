@@ -11,17 +11,17 @@ export class AuthService {
 
   login(username: string, role: string): void {
     this.currentUser = { username, role };
-    localStorage.setItem('user', JSON.stringify(this.currentUser));
+    sessionStorage.setItem('user', JSON.stringify(this.currentUser));
   }
 
   logout(): void {
     this.currentUser = null;
-    localStorage.removeItem('user');
+    sessionStorage.removeItem('user');
   }
 
   getUser(): { username: string; role: string } | null {
     if (!this.currentUser) {
-      const storedUser = localStorage.getItem('user');
+      const storedUser = sessionStorage.getItem('user');
       if (storedUser) {
         this.currentUser = JSON.parse(storedUser);
       }

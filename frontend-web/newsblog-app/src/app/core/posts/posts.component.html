@@ -1,0 +1,68 @@
+<div class="container mx-auto mt-8 p-4">
+
+  <app-filter-posts
+  (filtered)="onFilteredPosts($event)"
+  (reset)="onResetFilters()"
+></app-filter-posts>
+
+  <!-- normale posts -->
+  <h1 class="text-2xl font-bold mb-4" *ngIf="!selectedPost && !isFiltered"></h1>
+  <ul *ngIf="!selectedPost && posts.length > 0 && !isFiltered; else noPostsMessage" class="space-y-4">
+    <li
+      *ngFor="let post of posts"
+      class="p-4 border rounded shadow-md bg-gray-100 hover:bg-gray-200"
+    >
+      <h2 class="text-lg font-semibold text-blue-600">{{ post.title }}</h2>
+      <p class="text-gray-700">{{ post.content }}</p>
+      <div class="text-sm text-gray-500">
+        <span class="text-red-900">By {{ post.redactor }}</span> |
+        <span>Date: {{ post.createdDate | date: 'medium' }}</span>
+      </div>
+      <div class="mt-2">
+        <button
+          *ngIf="userRole === 'redactor'"
+          (click)="editPost(post)"
+          class="text-blue-600 underline hover:text-blue-800"
+        >
+          Edit
+        </button>
+      </div>
+    </li>
+  </ul>
+
+  <!-- gefiltererrede posts -->
+  <ul *ngIf="isFiltered && filteredPosts.length > 0" class="space-y-4 mt-4">
+    <li
+      *ngFor="let post of filteredPosts"
+      class="p-4 border rounded shadow-md bg-gray-100 hover:bg-gray-200"
+    >
+      <h2 class="text-lg font-semibold text-blue-600">{{ post.title }}</h2>
+      <p class="text-gray-700">{{ post.content }}</p>
+      <div class="text-sm text-gray-500">
+        <span class="text-red-900">By {{ post.redactor }}</span> |
+        <span>Date: {{ post.createdDate | date: 'medium' }}</span>
+      </div>
+      <div class="mt-2">
+        <button
+          *ngIf="userRole === 'redactor'"
+          (click)="editPost(post)"
+          class="text-blue-600 underline hover:text-blue-800"
+        >
+          Edit
+        </button>
+      </div>
+    </li>
+  </ul>
+
+  <!-- edit componentje -->
+  <app-edit-post
+    *ngIf="selectedPost"
+    [post]="selectedPost"
+    (save)="saveUpdatedPost($event)"
+    (cancel)="cancelEdit()"
+  ></app-edit-post>
+
+  <ng-template #noPostsMessage>
+    <div *ngIf="!isFiltered" class="text-gray-600">No posts available.</div>
+  </ng-template>
+</div>

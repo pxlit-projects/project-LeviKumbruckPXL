@@ -1,0 +1,28 @@
+<nav class="navbar bg-gray-800 text-white p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <div class="text-lg font-bold">PXL NewsBlog</div>
+    <div class="flex items-center space-x-4">
+      <button
+        [ngClass]="{'border-b-2 border-blue-600': currentRoute === '/posts'}"
+        (click)="navigateToPosts()"
+        class="hover:border-b-2 hover:border-blue-500 text-white px-2 py-1"
+      >
+        Posts
+      </button>
+      <button
+        *ngIf="userRole === 'redactor'"
+        [ngClass]="{'border-b-2 border-blue-600': currentRoute === '/addPost'}"
+        (click)="navigateToAddPost()"
+        class="hover:border-b-2 hover:border-blue-500 text-white px-2 py-1"
+      >
+        Add Post
+      </button>
+      <button
+        (click)="logout()"
+        class="bg-red-600 px-4 py-2 rounded text-white hover:bg-red-700"
+      >
+        Logout
+      </button>
+    </div>
+  </div>
+</nav>

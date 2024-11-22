@@ -1,6 +1,6 @@
-package be.pxl.services.domain;
+package be.pxl.services.api.dto;
 
-import jakarta.persistence.*;
+import be.pxl.services.domain.PostStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -8,27 +8,21 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
-
-@Entity
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Post {
+public class PostResponse {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String title;
 
-    @Column(columnDefinition = "TEXT")
     private String content;
 
     private String redactor;
 
     private LocalDateTime createdDate;
 
-    @Enumerated(EnumType.STRING)
     private PostStatus status;
 }

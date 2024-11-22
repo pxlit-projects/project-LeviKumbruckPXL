@@ -1,13 +1,12 @@
-
-/*
 import { TestBed } from '@angular/core/testing';
 import { CanActivateFn } from '@angular/router';
 
-import { authGuard } from './auth.guard';
+import { isRedactorGuard } from './role.guard';
 
-describe('authGuard', () => {
+/*
+describe('roleGuard', () => {
   const executeGuard: CanActivateFn = (...guardParameters) => 
-      TestBed.runInInjectionContext(() => authGuard(...guardParameters));
+      TestBed.runInInjectionContext(() => isRedactorGuard(...guardParameters));
 
   beforeEach(() => {
     TestBed.configureTestingModule({});

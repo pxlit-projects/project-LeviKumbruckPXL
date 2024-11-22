@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AuthService } from '../../shared/services/auth.service';
+import { AuthService } from '../../shared/services/authService/auth.service';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
@@ -20,7 +20,11 @@ export class LoginComponent {
   login(): void {
     if (this.username && this.role) {
       this.authService.login(this.username, this.role);
-      this.router.navigate(['/']); // Redirect to the homepage or dashboard
+      if (this.role === 'redactor') {
+        this.router.navigate(['/addPost']); 
+      } else {
+        this.router.navigate(['/posts']);
+      }
     }
   }
 }

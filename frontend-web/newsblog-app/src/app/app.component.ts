@@ -1,15 +1,22 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { LoginComponent } from './core/login/login.component';
-import { AddPostComponent } from './core/add-post/add-post.component';
+import { Router, RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './core/navbar/navbar.component';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [LoginComponent, AddPostComponent],
+  imports: [RouterOutlet, NavbarComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  constructor(private router: Router) {}
+
   title = 'newsblog-app';
+
+  isLoginPage(): boolean {
+    return this.router.url === '/login'; // Adjust if your login route is different
+  }
 }
