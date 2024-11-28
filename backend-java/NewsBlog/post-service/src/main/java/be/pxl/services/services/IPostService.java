@@ -2,9 +2,7 @@ package be.pxl.services.services;
 
 import be.pxl.services.api.dto.PostRequest;
 import be.pxl.services.api.dto.PostResponse;
-
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.List;
 
 public interface IPostService {

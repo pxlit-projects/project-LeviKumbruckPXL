@@ -2,9 +2,12 @@ package be.pxl.services.services;
 
 import be.pxl.services.api.dto.PostRequest;
 import be.pxl.services.api.dto.PostResponse;
+import be.pxl.services.client.ReviewClient;
 import be.pxl.services.domain.Post;
 import be.pxl.services.domain.PostStatus;
+import be.pxl.services.domain.ReviewRequest;
 import be.pxl.services.repository.PostRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -13,14 +16,13 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@RequiredArgsConstructor
 public class PostService implements IPostService{
 
     private final PostRepository postRepository;
 
+    private final ReviewClient reviewClient;
 
-    public PostService(PostRepository postRepository) {
-        this.postRepository = postRepository;
-    }
 
     //US-1: Post aanmaken
     @Override
@@ -36,6 +38,16 @@ public class PostService implements IPostService{
         Post post = mapToPost(postRequest);
         post.setStatus(PostStatus.DRAFT);
         postRepository.save(post);
+
+
+        ReviewRequest reviewRequest =
+                ReviewRequest.builder()
+                        .postId(post.getId())
+                        .comment("")
+                        .build();
+
+        reviewClient.sendPostForReview(reviewRequest);
+
         return mapToPostResponse(post);
     }
 

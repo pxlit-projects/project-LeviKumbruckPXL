@@ -9,9 +9,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-
-
-
 @Entity
 @Data
 @Builder
@@ -23,16 +20,9 @@ public class Comment {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    private Long postId;
 
-    private String title;
+    private String user;
 
     private String content;
-
-    private String redactor;
-
-    private boolean published;
-
-
-
-
 }

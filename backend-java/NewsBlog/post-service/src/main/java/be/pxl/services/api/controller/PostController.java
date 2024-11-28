@@ -63,6 +63,7 @@ public class PostController {
     @GetMapping("/getAll")
     public List<PostResponse> getAllPosts() {
         return postService.getAllPosts();
+
     }
 
     //US-5: filter posts

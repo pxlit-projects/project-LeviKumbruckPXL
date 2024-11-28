@@ -10,5 +10,4 @@ export const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'addPost', component: AddPostComponent, canActivate : [AuthGuard, isRedactorGuard] },
     { path: 'posts', component: PostsComponent, canActivate : [AuthGuard] },
-
 ];

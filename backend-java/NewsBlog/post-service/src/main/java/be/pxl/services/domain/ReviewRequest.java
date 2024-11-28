@@ -1,27 +1,24 @@
 package be.pxl.services.domain;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
+import java.io.Serial;
+import java.io.Serializable;
+
 @Data
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
-public class Review {
+@NoArgsConstructor
+public class ReviewRequest implements Serializable {
 
+    @Serial
+    private static final long serialVersionUID = 1L;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
 
     private Long postId;
-
-    @Enumerated(EnumType.STRING)
-    ReviewStatus status;
-
     private String comment;
+
 }

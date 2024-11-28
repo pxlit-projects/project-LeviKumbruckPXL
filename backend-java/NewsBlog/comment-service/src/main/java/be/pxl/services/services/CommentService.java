@@ -3,9 +3,7 @@ package be.pxl.services.services;
 import be.pxl.services.api.dto.CommentDto;
 import be.pxl.services.domain.Comment;
 import be.pxl.services.repository.CommentRepository;
-import be.pxl.services.services.converter.CommentConverter;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -13,43 +11,48 @@ import java.util.stream.Collectors;
 public class CommentService implements ICommentService {
 
     private final CommentRepository commentRepository;
-    private final CommentConverter commentConverter;
 
-
-    public CommentService(CommentRepository commentRepository, CommentConverter commentConverter) {
+    public CommentService(CommentRepository commentRepository) {
         this.commentRepository = commentRepository;
-        this.commentConverter = commentConverter;
+    }
+
+    // US:10 reactie plaatsen op een post
+    @Override
+    public void addComment(Long postId, CommentDto commentDto) {
+        Comment comment = mapToComment(commentDto);
+        commentRepository.save(comment);
+    }
+
+    // US-11: comment van andere collega's kunnen lezen
+    @Override
+    public List<CommentDto> getCommentsByPostId(Long postId) {
+        List<Comment> comments = commentRepository.findByPostId(postId);
+        return comments.stream().map(this::mapToCommentDto).collect(Collectors.toList());
+    }
+
+    // US-12: Eigen reacties bewerken of verwijderen
+    @Override
+    public void editComment(Long commentId, CommentDto commentDto) {
+        Comment comment = commentRepository.findById(commentId).orElseThrow();
+        comment.setContent(commentDto.content());
+        commentRepository.save(comment);
     }
 
     @Override
-    public List<CommentDto> getAllPosts() {
-
-        List<Comment> comments = commentRepository.findAll();
-
-        return comments.stream()
-                .map(commentConverter::convert)
-                .collect(Collectors.toList());
+    public void deleteComment(Long commentId) {
+        commentRepository.deleteById(commentId);
     }
 
-
-    @Override
-    public CommentDto getPostById(Long id) {
-        return null;
+    //private methods
+    private CommentDto mapToCommentDto(Comment comment) {
+        return new CommentDto(comment.getPostId(), comment.getUser(),  comment.getContent());
     }
 
-    @Override
-    public void deletePost(Long id) {
-
+    private Comment mapToComment(CommentDto commentDto) {
+        Comment comment = new Comment();
+        comment.setPostId(commentDto.postId());
+        comment.setUser(commentDto.user());
+        comment.setContent(commentDto.content());
+        return comment;
     }
-
-    @Override
-    public CommentDto updatePost(Long id, CommentDto commentDto) {
-        return null;
-    }
-
-    @Override
-    public CommentDto createPost(CommentDto commentDto) {
-        return null;
-    }
-
 }
