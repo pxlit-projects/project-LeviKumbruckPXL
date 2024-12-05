@@ -32,4 +32,6 @@ public class Post {
     @Enumerated(EnumType.STRING)
     private PostStatus status;
 
+    private String reviewComment;
+
 }

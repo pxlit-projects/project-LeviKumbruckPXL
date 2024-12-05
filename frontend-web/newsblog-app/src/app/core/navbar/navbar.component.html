@@ -7,16 +7,27 @@
         (click)="navigateToPosts()"
         class="hover:border-b-2 hover:border-blue-500 text-white px-2 py-1"
       >
-        Posts
+        All Posts
       </button>
+      
       <button
         *ngIf="userRole === 'redactor'"
         [ngClass]="{'border-b-2 border-blue-600': currentRoute === '/addPost'}"
         (click)="navigateToAddPost()"
         class="hover:border-b-2 hover:border-blue-500 text-white px-2 py-1"
       >
-        Add Post
+        Make Posts
       </button>
+      
+      <button
+        *ngIf="userRole === 'redactor'"
+        [ngClass]="{'border-b-2 border-blue-600': currentRoute === '/under-review'}"
+        (click)="navigateToUnderReview()"
+        class="hover:border-b-2 hover:border-blue-500 text-white px-2 py-1"
+      >
+        Review Posts
+      </button>
+      
       <button
         (click)="logout()"
         class="bg-red-600 px-4 py-2 rounded text-white hover:bg-red-700"

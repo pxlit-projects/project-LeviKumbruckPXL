@@ -20,7 +20,7 @@ export class PostsComponent implements OnInit {
   errorMessage: string = '';
   userRole: string | null = null;
   selectedPost: Post | null = null;
-  isFiltered: boolean = false; // Track if filters are applied
+  isFiltered: boolean = false; 
 
   constructor(private postService: PostService, private router: Router) {}
 

@@ -4,11 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Post } from '../../shared/models/post.model';
 import { DraftsComponent } from "../drafts/drafts.component";
+import { NeedsChangingComponent } from '../needs-changing/needs-changing.component';
 
 @Component({
   selector: 'app-add-post',
   standalone: true,
-  imports: [FormsModule, CommonModule, DraftsComponent],
+  imports: [FormsModule, CommonModule, DraftsComponent, NeedsChangingComponent],
   templateUrl: './add-post.component.html',
   styleUrl: './add-post.component.css'
 })

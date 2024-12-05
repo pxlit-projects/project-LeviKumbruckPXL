@@ -4,10 +4,13 @@ import { AddPostComponent } from './core/add-post/add-post.component';
 import { AuthGuard } from './guards/auth.guard';
 import { PostsComponent } from './core/posts/posts.component';
 import { isRedactorGuard } from './guards/role.guard';
+import { UnderReviewComponent } from './core/under-review/under-review.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
     { path: 'addPost', component: AddPostComponent, canActivate : [AuthGuard, isRedactorGuard] },
     { path: 'posts', component: PostsComponent, canActivate : [AuthGuard] },
+    { path: 'under-review', component: UnderReviewComponent, canActivate: [AuthGuard, isRedactorGuard] },
+
 ];

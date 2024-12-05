@@ -25,4 +25,6 @@ public class PostResponse {
     private LocalDateTime createdDate;
 
     private PostStatus status;
+
+    private String reviewComment;
 }

@@ -11,5 +11,5 @@ public interface IReviewService {
 
     void approvePost(Long postId);
 
-    void rejectPost(Long postId);
+    void rejectPost(Long postId, String rejectionComment);
 }

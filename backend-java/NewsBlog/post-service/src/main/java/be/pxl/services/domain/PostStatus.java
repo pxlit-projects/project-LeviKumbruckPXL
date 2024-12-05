@@ -1,5 +1,5 @@
 package be.pxl.services.domain;
 
 public enum PostStatus {
-    DRAFT, PUBLISHED
+    DRAFT, NEEDS_CHANGING, UNDER_REVIEW, PUBLISHED
 }

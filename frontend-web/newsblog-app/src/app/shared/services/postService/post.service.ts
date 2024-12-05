@@ -12,11 +12,11 @@ export class PostService {
   constructor(private http: HttpClient) {}
 
   createPost(post: Post): Observable<Post> {
-    return this.http.post<Post>(`${this.apiUrl}/publish`, post);
+    return this.http.post<Post>(`${this.apiUrl}/sendForReview`, post);
   }
 
-  publishDraft(draftId: number): Observable<Post> {
-    return this.http.put<Post>(`${this.apiUrl}/publishDraft/${draftId}`, {});
+  sendDraftForReview(draftId: number): Observable<Post> {
+    return this.http.put<Post>(`${this.apiUrl}/sendDraftForReview/${draftId}`, {});
   }
   
   saveAsDraft(post: Post): Observable<Post> {
@@ -25,10 +25,6 @@ export class PostService {
 
   updatePost(postId: number, updatedPost: Post): Observable<Post> {
     return this.http.put<Post>(`${this.apiUrl}/updatePost/${postId}`, updatedPost);
-  }
-  
-  updateDraft(id: number, post: Post): Observable<Post> {
-    return this.http.put<Post>(`${this.apiUrl}/updateDraft/${id}`, post);
   }
   
   getAllPosts(): Observable<Post[]> {
@@ -48,6 +44,14 @@ export class PostService {
   
     return this.http.get<Post[]>(`${this.apiUrl}/filter`, { params });
   }
+
+  getNeedsChangingPosts(redactor: string): Observable<Post[]> {
+    return this.http.get<Post[]>(`${this.apiUrl}/needs-changing?redactor=${redactor}`);
+  }
+
+  
+  
+  
   
   
 

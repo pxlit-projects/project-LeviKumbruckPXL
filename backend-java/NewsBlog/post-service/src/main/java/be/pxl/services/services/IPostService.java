@@ -15,11 +15,11 @@ public interface IPostService {
 
     List<PostResponse> getDraftsByRedactor(String redactor);
 
-    PostResponse updateDraft(Long postId, PostRequest postRequest);
-
-    PostResponse publishDraft(Long id);
+    PostResponse sendDraftForReview(Long id);
 
     List<PostResponse> filterPosts(String content, String redactor, LocalDate createdDate);
 
     PostResponse updatePost(Long id, PostRequest postRequest);
+
+    List<PostResponse> getNeedsChangingPosts(String redactor);
 }

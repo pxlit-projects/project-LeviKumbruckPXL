@@ -29,7 +29,8 @@ public class ReviewController {
     }
 
     @PutMapping("/reject/{postId}")
-    public void rejectPost(@PathVariable Long postId) {
-        reviewService.rejectPost(postId);
+    public void rejectPost(@PathVariable Long postId, @RequestBody String rejectionComment) {
+        reviewService.rejectPost(postId, rejectionComment);
     }
+
 }

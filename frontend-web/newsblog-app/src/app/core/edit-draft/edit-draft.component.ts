@@ -19,7 +19,7 @@ export class EditDraftComponent {
   constructor(private postService: PostService) {}
 
   saveDraft(): void {
-    this.postService.updateDraft(Number(this.draft.id!), this.draft).subscribe(
+    this.postService.updatePost(Number(this.draft.id!), this.draft).subscribe(
       (updatedDraft) => {
         this.draftUpdated.emit(updatedDraft); 
       },

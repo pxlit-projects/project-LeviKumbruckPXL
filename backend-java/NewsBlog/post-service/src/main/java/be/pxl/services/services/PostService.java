@@ -6,10 +6,11 @@ import be.pxl.services.client.ReviewClient;
 import be.pxl.services.domain.Post;
 import be.pxl.services.domain.PostStatus;
 import be.pxl.services.domain.ReviewRequest;
+import be.pxl.services.domain.ReviewResponse;
 import be.pxl.services.repository.PostRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
+import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -28,8 +29,18 @@ public class PostService implements IPostService{
     @Override
     public PostResponse addPost(PostRequest postRequest) {
         Post post = mapToPost(postRequest);
-        post.setStatus(PostStatus.PUBLISHED);
+        post.setStatus(PostStatus.UNDER_REVIEW);
+
+        //Stuur via RabbitMQ naar review-service
         postRepository.save(post);
+        ReviewRequest reviewRequest =
+                ReviewRequest.builder()
+                        .postId(post.getId())
+                        .postTitle(post.getTitle())
+                        .postContent(post.getContent())
+                        .build();
+
+        reviewClient.sendPostForReview(reviewRequest);
         return mapToPostResponse(post);
     }
 
@@ -38,16 +49,6 @@ public class PostService implements IPostService{
         Post post = mapToPost(postRequest);
         post.setStatus(PostStatus.DRAFT);
         postRepository.save(post);
-
-
-        ReviewRequest reviewRequest =
-                ReviewRequest.builder()
-                        .postId(post.getId())
-                        .comment("")
-                        .build();
-
-        reviewClient.sendPostForReview(reviewRequest);
-
         return mapToPostResponse(post);
     }
 
@@ -57,37 +58,33 @@ public class PostService implements IPostService{
         return drafts.stream().map(this::mapToPostResponse).toList();
     }
 
-    public PostResponse updateDraft(Long postId, PostRequest postRequest) {
-        Post post = postRepository.findById(postId)
-                .orElseThrow(() -> new RuntimeException("Post not found"));
 
-        if (post.getStatus() != PostStatus.DRAFT) {
-            throw new RuntimeException("Only drafts can be updated");
-        }
-
-        post.setTitle(postRequest.getTitle());
-        post.setContent(postRequest.getContent());
-        post.setCreatedDate(LocalDateTime.now());
-
-        postRepository.save(post);
-        return mapToPostResponse(post);
-    }
-
-    public PostResponse publishDraft(Long id) {
+    public PostResponse sendDraftForReview(Long id) {
         Post draft = postRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Draft not found"));
 
-        if (draft.getStatus() != PostStatus.DRAFT) {
-            throw new RuntimeException("Only drafts can be published");
-        }
 
-        draft.setStatus(PostStatus.PUBLISHED);
+
+        draft.setStatus(PostStatus.UNDER_REVIEW);
         draft.setCreatedDate(LocalDateTime.now());
+
+
+        //Stuur via RabbitMQ naar review-service
+        postRepository.save(draft);
+        ReviewRequest reviewRequest =
+                ReviewRequest.builder()
+                        .postId(draft.getId())
+                        .postTitle(draft.getTitle())
+                        .postContent(draft.getContent())
+                        .build();
+
+        reviewClient.sendPostForReview(reviewRequest);
+
         postRepository.save(draft);
         return mapToPostResponse(draft);
     }
 
-    //US-3: Inhoud (published) post bewerken
+    //US-3: Inhoud post bewerken
     @Override
     public PostResponse updatePost(Long id, PostRequest postRequest) {
         Post post = postRepository.findById(id)
@@ -122,6 +119,34 @@ public class PostService implements IPostService{
         return posts.stream().map(this::mapToPostResponse).toList();
     }
 
+    //KonijnMQ Luisteraar
+    @RabbitListener(queues = "postQueue")
+    public void handleReviewResult(ReviewResponse reviewResponse) {
+        Long postId = reviewResponse.getPostId();
+        Post post = postRepository.findById(postId)
+                .orElseThrow(() -> new RuntimeException("Post not found"));
+        System.out.println("Processing review result with postId: " + reviewResponse.getPostId());
+
+        if ("APPROVED".equals(reviewResponse.getStatus())) {
+            post.setStatus(PostStatus.PUBLISHED);
+        } else if ("REJECTED".equals(reviewResponse.getStatus())) {
+            post.setStatus(PostStatus.NEEDS_CHANGING);
+            post.setReviewComment(reviewResponse.getComment());
+        }
+
+
+
+        postRepository.save(post);
+    }
+
+    //voor coolheid
+    @Override
+    public List<PostResponse> getNeedsChangingPosts(String redactor) {
+        List<Post> posts = postRepository.findByStatusAndRedactor(PostStatus.NEEDS_CHANGING, redactor);
+        return posts.stream().map(this::mapToPostResponse).toList();
+    }
+
+
 
 
     //private methodes
@@ -133,6 +158,7 @@ public class PostService implements IPostService{
                 .redactor(post.getRedactor())
                 .createdDate(post.getCreatedDate())
                 .status(post.getStatus())
+                .reviewComment(post.getReviewComment())
                 .build();
     }
 

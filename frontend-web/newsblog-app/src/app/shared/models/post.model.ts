@@ -4,5 +4,6 @@ export interface Post {
     content: string;
     redactor: string;
     createdDate?: string;
+    reviewComment?: string;
   }
   

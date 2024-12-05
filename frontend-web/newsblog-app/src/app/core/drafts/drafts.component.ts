@@ -54,8 +54,8 @@ export class DraftsComponent implements OnInit {
     this.selectedDraft = null; 
   }
 
-  publishDraft(draft: Post): void {
-    this.postService.publishDraft(Number(draft.id!)).subscribe(
+  sendDraftForReview(draft: Post): void {
+    this.postService.sendDraftForReview(Number(draft.id!)).subscribe(
       (publishedPost) => {
         this.drafts = this.drafts.filter((d) => d.id !== draft.id); 
         console.log('Draft published successfully:', publishedPost);

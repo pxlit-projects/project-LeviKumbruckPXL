@@ -41,4 +41,9 @@ export class NavbarComponent {
   navigateToAddPost() {
     this.router.navigate(['/addPost']);
   }
+
+  navigateToUnderReview() {
+    this.router.navigate(['/under-review']);
+  }
+  
 }

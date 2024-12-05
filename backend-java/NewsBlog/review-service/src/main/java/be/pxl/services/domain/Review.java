@@ -20,6 +20,11 @@ public class Review {
 
     private Long postId;
 
+    private String postTitle;
+
+    @Column(columnDefinition = "TEXT")
+    private String postContent;
+
     @Enumerated(EnumType.STRING)
     ReviewStatus status;
 

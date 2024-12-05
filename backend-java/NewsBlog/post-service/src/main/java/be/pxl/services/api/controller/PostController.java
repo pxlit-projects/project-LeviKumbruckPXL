@@ -1,15 +1,12 @@
 package be.pxl.services.api.controller;
 
-
 import be.pxl.services.api.dto.PostRequest;
 import be.pxl.services.api.dto.PostResponse;
 import be.pxl.services.services.IPostService;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -23,7 +20,7 @@ public class PostController {
     }
 
     //US-1: Post aanmaken
-    @PostMapping("/publish")
+    @PostMapping("/sendForReview")
     public PostResponse addPost(@RequestBody PostRequest postRequest) {
         return postService.addPost(postRequest);
     }
@@ -40,15 +37,9 @@ public class PostController {
         return ResponseEntity.ok(drafts);
     }
 
-    @PutMapping("/updateDraft/{id}")
-    public ResponseEntity<PostResponse> updateDraft(@PathVariable Long id, @RequestBody PostRequest postRequest) {
-        PostResponse updatedPost = postService.updateDraft(id, postRequest);
-        return ResponseEntity.ok(updatedPost);
-    }
-
-    @PutMapping("/publishDraft/{id}")
-    public ResponseEntity<PostResponse> publishDraft(@PathVariable Long id) {
-        PostResponse publishedPost = postService.publishDraft(id);
+    @PutMapping("/sendDraftForReview/{id}")
+    public ResponseEntity<PostResponse> sendDraftForReview(@PathVariable Long id) {
+        PostResponse publishedPost = postService.sendDraftForReview(id);
         return ResponseEntity.ok(publishedPost);
     }
 
@@ -78,6 +69,11 @@ public class PostController {
     }
 
 
+    //voor coolheid
+    @GetMapping("/needs-changing")
+    public List<PostResponse> getNeedsChangingPosts(@RequestParam String redactor) {
+        return postService.getNeedsChangingPosts(redactor);
+    }
 
 
 }

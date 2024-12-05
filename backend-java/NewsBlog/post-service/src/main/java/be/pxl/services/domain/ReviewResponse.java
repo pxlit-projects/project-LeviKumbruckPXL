@@ -12,14 +12,15 @@ import java.io.Serializable;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class ReviewRequest implements Serializable {
+public class ReviewResponse implements Serializable {
 
     @Serial
     private static final long serialVersionUID = 1L;
 
 
     private Long postId;
-    private String postTitle;
-    private String postContent;
+    private String comment;
+    private String status;
+
 
 }
