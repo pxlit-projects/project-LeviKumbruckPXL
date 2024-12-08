@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 
 @Entity
@@ -34,4 +35,6 @@ public class Post {
 
     private String reviewComment;
 
+    @ElementCollection
+    private List<Long> commentIds;
 }

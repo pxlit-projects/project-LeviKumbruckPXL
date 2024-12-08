@@ -68,11 +68,16 @@ public class PostController {
         return ResponseEntity.ok(filteredPosts);
     }
 
-
     //voor coolheid
     @GetMapping("/needs-changing")
     public List<PostResponse> getNeedsChangingPosts(@RequestParam String redactor) {
         return postService.getNeedsChangingPosts(redactor);
+    }
+
+    //OPEN-FEIGN endpointje:
+    @PostMapping("/addComment/{postId}/{commentId}")
+    public void addComment(@PathVariable Long postId, @PathVariable Long commentId) {
+        postService.addComment(postId, commentId);
     }
 
 

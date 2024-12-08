@@ -22,4 +22,6 @@ public interface IPostService {
     PostResponse updatePost(Long id, PostRequest postRequest);
 
     List<PostResponse> getNeedsChangingPosts(String redactor);
+
+    void addComment(Long postId, Long commentId);
 }

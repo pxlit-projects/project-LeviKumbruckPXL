@@ -1,26 +1,27 @@
 package be.pxl.services.services;
 
 import be.pxl.services.api.dto.CommentDto;
+import be.pxl.services.client.PostClient;
 import be.pxl.services.domain.Comment;
 import be.pxl.services.repository.CommentRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
+@RequiredArgsConstructor
 public class CommentService implements ICommentService {
 
     private final CommentRepository commentRepository;
-
-    public CommentService(CommentRepository commentRepository) {
-        this.commentRepository = commentRepository;
-    }
+    private final PostClient postClient;
 
     // US:10 reactie plaatsen op een post
     @Override
     public void addComment(Long postId, CommentDto commentDto) {
         Comment comment = mapToComment(commentDto);
         commentRepository.save(comment);
+        postClient.addComment(postId, comment.getId());
     }
 
     // US-11: comment van andere collega's kunnen lezen

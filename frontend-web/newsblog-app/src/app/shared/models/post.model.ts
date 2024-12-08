@@ -5,5 +5,6 @@ export interface Post {
     redactor: string;
     createdDate?: string;
     reviewComment?: string;
+    commentIds?: number[];
   }
   

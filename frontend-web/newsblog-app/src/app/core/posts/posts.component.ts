@@ -35,6 +35,7 @@ export class PostsComponent implements OnInit {
     this.postService.getAllPosts().subscribe(
       (data) => {
         this.posts = data;
+        
       },
       (error) => {
         this.errorMessage = 'Failed to fetch posts. Please try again later.';
@@ -42,6 +43,10 @@ export class PostsComponent implements OnInit {
       }
     );
   }
+
+  viewComments(post: Post): void {
+  this.router.navigate(['/comments', post.id]); // Update this route to match your app's routing
+}
 
   // Handle filtered posts
   onFilteredPosts(filtered: Post[]): void {

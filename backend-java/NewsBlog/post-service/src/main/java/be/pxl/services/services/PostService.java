@@ -146,7 +146,14 @@ public class PostService implements IPostService{
         return posts.stream().map(this::mapToPostResponse).toList();
     }
 
-
+    //Open feign endpointje
+    @Override
+    public void addComment(Long postId, Long commentId) {
+        Post post = postRepository.findById(postId)
+                .orElseThrow(() -> new RuntimeException("Post not found"));
+        post.getCommentIds().add(commentId);
+        postRepository.save(post);
+    }
 
 
     //private methodes
@@ -159,6 +166,7 @@ public class PostService implements IPostService{
                 .createdDate(post.getCreatedDate())
                 .status(post.getStatus())
                 .reviewComment(post.getReviewComment())
+                .commentIds(post.getCommentIds())
                 .build();
     }
 
