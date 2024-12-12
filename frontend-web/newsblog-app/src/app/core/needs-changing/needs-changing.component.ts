@@ -14,7 +14,7 @@ import { EditDraftComponent } from '../edit-draft/edit-draft.component';
 })
 export class NeedsChangingComponent implements OnInit {
   posts: Post[] = [];
-  selectedPost: Post | null = null; // Selected post for editing
+  selectedPost: Post | null = null;
   errorMessage: string = '';
   redactor: string = '';
 
