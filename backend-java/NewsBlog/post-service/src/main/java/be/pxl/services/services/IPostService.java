@@ -1,7 +1,10 @@
 package be.pxl.services.services;
 
+import be.pxl.services.api.dto.NotificationResponse;
 import be.pxl.services.api.dto.PostRequest;
 import be.pxl.services.api.dto.PostResponse;
+import be.pxl.services.domain.Notification;
+
 import java.time.LocalDate;
 import java.util.List;
 
@@ -22,4 +25,5 @@ public interface IPostService {
     PostResponse updatePost(Long id, PostRequest postRequest);
 
     List<PostResponse> getNeedsChangingPosts(String redactor);
+
 }

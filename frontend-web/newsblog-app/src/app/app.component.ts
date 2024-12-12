@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { CommonModule } from '@angular/common';
+import { NotificationsComponent } from "./core/notifications/notifications.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, CommonModule],
+  imports: [RouterOutlet, NavbarComponent, CommonModule, NotificationsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

@@ -2,10 +2,13 @@ package be.pxl.services.services;
 
 import be.pxl.services.api.dto.ReviewRequest;
 import be.pxl.services.api.dto.ReviewResponse;
+import be.pxl.services.client.NotificationClient;
 import be.pxl.services.client.PostClient;
+import be.pxl.services.domain.NotificationRequest;
 import be.pxl.services.domain.Review;
 import be.pxl.services.domain.ReviewStatus;
 import be.pxl.services.repository.ReviewRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -15,12 +18,14 @@ public class ReviewService implements IReviewService {
 
     private final ReviewRepository reviewRepository;
     private final PostClient postClient;
+    private final NotificationClient notificationClient;
 
-
-    public ReviewService(ReviewRepository reviewRepository, PostClient postClient) {
+    public ReviewService(ReviewRepository reviewRepository, PostClient postClient, NotificationClient notificationClient) {
         this.reviewRepository = reviewRepository;
         this.postClient = postClient;
+        this.notificationClient = notificationClient;
     }
+
 
     // US-07: alle under review posts bekijken + kunnen goedkeuren of afkeuren
     @Override
@@ -36,6 +41,9 @@ public class ReviewService implements IReviewService {
         review.setStatus(ReviewStatus.APPROVED);
         reviewRepository.save(review);
 
+        NotificationRequest notificationRequest = new NotificationRequest(postId, "Your post with title \"" + review.getPostTitle() + "\" and id \"" + postId + "\" has been approved");
+        notificationClient.sendNotification(notificationRequest);
+
         postClient.sendReviewResult(new ReviewResponse(postId, review.getPostTitle(), review.getPostContent(), review.getStatus() ,review.getComment()));
     }
 
@@ -45,6 +53,9 @@ public class ReviewService implements IReviewService {
         review.setStatus(ReviewStatus.REJECTED);
         review.setComment(rejectionComment);
         reviewRepository.save(review);
+
+        NotificationRequest notificationRequest = new NotificationRequest(postId, "Your post with title \"" + review.getPostTitle() + "\" and id \"" + postId + "\" has been rejected");
+        notificationClient.sendNotification(notificationRequest);
 
         postClient.sendReviewResult(new ReviewResponse(postId, review.getPostTitle(), review.getPostContent(), review.getStatus() ,review.getComment()));
     }

@@ -2,6 +2,7 @@ package be.pxl.services.api.controller;
 
 import be.pxl.services.api.dto.PostRequest;
 import be.pxl.services.api.dto.PostResponse;
+import be.pxl.services.domain.Notification;
 import be.pxl.services.services.IPostService;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
@@ -73,6 +74,4 @@ public class PostController {
     public List<PostResponse> getNeedsChangingPosts(@RequestParam String redactor) {
         return postService.getNeedsChangingPosts(redactor);
     }
-
-
 }
