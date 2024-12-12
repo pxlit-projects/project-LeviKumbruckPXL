@@ -28,6 +28,4 @@ public class PostResponse {
     private PostStatus status;
 
     private String reviewComment;
-
-    private List<Long> commentIds;
 }

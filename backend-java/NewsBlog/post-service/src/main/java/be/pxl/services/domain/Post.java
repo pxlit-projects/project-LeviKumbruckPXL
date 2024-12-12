@@ -34,7 +34,4 @@ public class Post {
     private PostStatus status;
 
     private String reviewComment;
-
-    @ElementCollection
-    private List<Long> commentIds;
 }

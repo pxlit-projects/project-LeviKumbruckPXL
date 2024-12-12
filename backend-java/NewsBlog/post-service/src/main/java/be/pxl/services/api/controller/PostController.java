@@ -74,11 +74,5 @@ public class PostController {
         return postService.getNeedsChangingPosts(redactor);
     }
 
-    //OPEN-FEIGN endpointje:
-    @PostMapping("/addComment/{postId}/{commentId}")
-    public void addComment(@PathVariable Long postId, @PathVariable Long commentId) {
-        postService.addComment(postId, commentId);
-    }
-
 
 }

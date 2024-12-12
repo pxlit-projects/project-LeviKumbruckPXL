@@ -44,14 +44,9 @@ export class PostsComponent implements OnInit {
     );
   }
 
-  viewComments(post: Post): void {
-  this.router.navigate(['/comments', post.id]); // Update this route to match your app's routing
-}
-
-  // Handle filtered posts
   onFilteredPosts(filtered: Post[]): void {
     this.filteredPosts = filtered;
-    this.isFiltered = true; // Indicate that filtered posts are being displayed
+    this.isFiltered = true; 
   }
 
   onResetFilters(): void {
@@ -80,5 +75,9 @@ export class PostsComponent implements OnInit {
         this.errorMessage = 'Failed to update post. Please try again later.';
       }
     );
+  }
+
+  viewComments(postId: number): void {
+    this.router.navigate(['/posts', postId, 'comments']);
   }
 }
