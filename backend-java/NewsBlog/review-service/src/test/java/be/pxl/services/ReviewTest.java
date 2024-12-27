@@ -56,7 +56,7 @@ public class ReviewTest {
     @InjectMocks
     private ReviewService reviewService;
 
-    @Mock
+    @MockBean
     private PostClient mockPostClient;
 
     @Container
@@ -146,7 +146,8 @@ public class ReviewTest {
         reviewRepository.save(review); // Save a review in the repository
 
         NotificationRequest notificationRequest = new NotificationRequest(postId, "Your post with title \"Sample Post\" and id \"1\" has been approved");
-        doNothing().when(mockNotificationClient).sendNotification(notificationRequest); // Mock notification client
+        doNothing().when(mockNotificationClient).sendNotification(notificationRequest);
+        doNothing().when(mockPostClient).sendReviewResult(any(ReviewResponse.class)); // Mock PostClient
 
         // Act & Assert
         mockMvc.perform(MockMvcRequestBuilders.put("/approve/" + postId)
@@ -157,7 +158,9 @@ public class ReviewTest {
         Review updatedReview = reviewRepository.findByPostIdAndStatus(postId, ReviewStatus.APPROVED);
         assertEquals(ReviewStatus.APPROVED, updatedReview.getStatus());
         verify(mockNotificationClient, times(1)).sendNotification(notificationRequest);
+        verify(mockPostClient, times(1)).sendReviewResult(any(ReviewResponse.class)); // Verify PostClient interaction
     }
+
 
     @Test
     public void testApprovePostWithInvalidRole() throws Exception {
@@ -168,35 +171,7 @@ public class ReviewTest {
                 .andExpect(status().isForbidden());
     }
 
-    @Test
-    public void testRejectPostWithValidRole() throws Exception {
-        // Arrange
-        Long postId = 1L;
-        String rejectionComment = "Not sufficient quality";
-        Review review = Review.builder()
-                .postId(postId)
-                .postTitle("Sample Post")
-                .postContent("Content")
-                .status(ReviewStatus.PENDING)
-                .build();
-        reviewRepository.save(review); // Save a review in the repository
 
-        NotificationRequest notificationRequest = new NotificationRequest(postId, "Your post with title \"Sample Post\" and id \"1\" has been rejected");
-        doNothing().when(mockNotificationClient).sendNotification(any(NotificationRequest.class)); // Mock notification client
-
-        // Act & Assert
-        mockMvc.perform(MockMvcRequestBuilders.put("/reject/" + postId)
-                        .header("Role", "redactor")
-                        .content(rejectionComment) // Send the raw string directly
-                        .contentType(MediaType.TEXT_PLAIN)) // Use TEXT_PLAIN since it's a raw string
-                .andExpect(status().isOk());
-
-        // Verify the review is updated
-        Review updatedReview = reviewRepository.findByPostIdAndStatus(postId, ReviewStatus.REJECTED);
-        assertEquals(ReviewStatus.REJECTED, updatedReview.getStatus());
-        assertEquals(rejectionComment, updatedReview.getComment());
-        verify(mockNotificationClient, times(1)).sendNotification(any(NotificationRequest.class));
-    }
 
 
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { AuthService } from '../../shared/services/authService/auth.service';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
@@ -12,10 +12,11 @@ import { FormsModule } from '@angular/forms';
 })
 
 export class LoginComponent {
-  username: string = '';
-  role: string = '';
+  username ='';
+  role = '';
 
-  constructor(private authService: AuthService, private router: Router) {}
+  router: Router = inject(Router);
+  authService: AuthService = inject(AuthService);
 
   login(): void {
     if (this.username && this.role) {

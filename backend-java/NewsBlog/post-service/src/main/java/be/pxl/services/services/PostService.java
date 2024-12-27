@@ -13,6 +13,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -143,9 +144,6 @@ public class PostService implements IPostService{
             post.setStatus(PostStatus.NEEDS_CHANGING);
             post.setReviewComment(reviewResponse.getComment());
         }
-
-
-
         postRepository.save(post);
     }
 

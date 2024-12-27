@@ -3,17 +3,17 @@ import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Notification } from '../../models/notification.model';
 import { AuthService } from '../authService/auth.service';
+import { environment } from '../../../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class NotificationService {
-  private apiUrl = 'http://localhost:8083/post/notification'; 
 
   constructor(private http: HttpClient, private authService: AuthService) {}
 
   // moet dit hier zo doen want anders is redactor null voor een reden.
-  private getHeaders(contentType: string = 'application/json'): HttpHeaders {
+  private getHeaders(contentType = 'application/json'): HttpHeaders {
     let role = '';
     const userString = sessionStorage.getItem('user');
     
@@ -37,14 +37,14 @@ export class NotificationService {
 
   getNotifications(redactor: string): Observable<Notification[]> {
     const params = new HttpParams().set('redactor', redactor);
-    return this.http.get<Notification[]>(this.apiUrl, { 
+    return this.http.get<Notification[]>(environment.notificationUrl, { 
       headers: this.getHeaders(),
       params,
     });
   }
 
   deleteNotification(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/${id}`, {
+    return this.http.delete<void>(`${environment.notificationUrl}/${id}`, {
       headers: this.getHeaders(),
     });
   }

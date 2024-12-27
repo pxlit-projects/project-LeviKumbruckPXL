@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../../shared/services/authService/auth.service';
 import { FormsModule } from '@angular/forms';
@@ -11,12 +11,13 @@ import { CommonModule } from '@angular/common';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
-export class NavbarComponent {
+export class NavbarComponent implements OnInit {
   userRole: string | null = null;
-  currentRoute: string = '';
+  currentRoute ='';
 
+  router: Router = inject(Router);
+  authService: AuthService = inject(AuthService);
 
-  constructor(private authService: AuthService, private router: Router) {}
 
   ngOnInit(): void {
     const user = sessionStorage.getItem('user');

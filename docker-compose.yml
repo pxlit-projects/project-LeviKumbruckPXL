@@ -59,6 +59,14 @@ services:
       - mysql-review-data:/var/lib/mysql
     networks:
       - microservices-network
+  
+  frontend:
+    build:
+      context: ./frontend-web/newsblog-app
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "4200:80"
 
 volumes:
   mysql-comment-data:

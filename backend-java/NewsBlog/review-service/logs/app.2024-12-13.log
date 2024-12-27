@@ -1,0 +1,568 @@
+2024-12-13T17:42:34.241+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 2272 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T17:42:34.241+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T17:42:34.242+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T17:42:38.198+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 4.875 seconds (process running for 14.777)
+2024-12-13T17:42:38.201+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1, postTitle=Test, postContent=Test]
+2024-12-13T17:42:38.266+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1, postTitle=Test, postContent=Test]
+2024-12-13T17:42:38.277+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1, postTitle=Test, postContent=Test]
+2024-12-13T17:42:38.282+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1, postTitle=New Post, postContent=Post Content]
+2024-12-13T17:42:38.286+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1, postTitle=New Post, postContent=Post Content]
+2024-12-13T17:42:38.291+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1, postTitle=New Post, postContent=Post Content]
+2024-12-13T17:42:38.297+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1, postTitle=Draft Title, postContent=Draft Content]
+2024-12-13T17:42:38.305+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=2, postTitle=New Post, postContent=Post Content]
+2024-12-13T17:42:38.319+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1, postTitle=Draft Title, postContent=Draft Content]
+2024-12-13T17:42:38.327+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=2, postTitle=New Post, postContent=Post Content]
+2024-12-13T17:42:38.335+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1, postTitle=Draft Title, postContent=Draft Content]
+2024-12-13T17:42:38.342+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=2, postTitle=New Post, postContent=Post Content]
+2024-12-13T17:42:38.348+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1, postTitle=Draft Title, postContent=Draft Content]
+2024-12-13T17:42:38.353+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=2, postTitle=New Post, postContent=Post Content]
+2024-12-13T17:42:38.360+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1, postTitle=Draft Title, postContent=Draft Content]
+2024-12-13T17:42:38.365+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=2, postTitle=New Post, postContent=Post Content]
+2024-12-13T17:42:38.371+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1, postTitle=Draft Title, postContent=Draft Content]
+2024-12-13T17:42:38.376+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=2, postTitle=New Post, postContent=Post Content]
+2024-12-13T17:42:38.382+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1, postTitle=Draft Title, postContent=Draft Content]
+2024-12-13T17:42:38.386+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=2, postTitle=New Post, postContent=Post Content]
+2024-12-13T17:42:38.863+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T17:42:38.863+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T17:42:38.924+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T17:42:38.925+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T17:42:41.784+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T17:42:41.784+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T17:42:41.799+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T17:42:41.799+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T17:42:41.832+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T17:42:41.832+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T17:42:41.841+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T17:42:41.841+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T17:47:25.254+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 26960 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T17:47:25.255+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T17:47:25.255+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T17:47:29.178+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 4.815 seconds (process running for 15.789)
+2024-12-13T17:47:29.765+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T17:47:29.765+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T17:47:29.845+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T17:47:29.845+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T17:47:32.677+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T17:47:32.677+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T17:47:32.690+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T17:47:32.690+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T17:47:32.722+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T17:47:32.722+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T17:47:32.730+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T17:47:32.730+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T17:48:56.018+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 23148 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T17:48:56.019+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T17:48:56.019+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T17:49:00.015+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 4.956 seconds (process running for 14.709)
+2024-12-13T17:49:00.628+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T17:49:00.628+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T17:49:00.703+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T17:49:00.703+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T17:49:03.593+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T17:49:03.593+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T17:49:03.606+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T17:49:03.606+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T17:49:03.638+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T17:49:03.638+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T17:49:03.646+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T17:49:03.647+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T17:49:43.644+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 23944 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T17:49:43.645+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T17:49:43.646+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T17:49:47.754+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 5.092 seconds (process running for 15.973)
+2024-12-13T17:49:48.381+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T17:49:48.381+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T17:49:48.439+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T17:49:48.439+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T17:49:48.452+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T17:49:48.452+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T17:49:48.466+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T17:49:48.466+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T17:52:41.747+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 29944 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T17:52:41.748+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T17:52:41.748+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T17:52:45.786+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 4.924 seconds (process running for 15.726)
+2024-12-13T17:52:46.412+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T17:52:46.413+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T17:52:46.496+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T17:52:46.497+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T17:52:49.333+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T17:52:49.333+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T17:52:49.346+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T17:52:49.346+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T17:52:49.377+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T17:52:49.377+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T17:52:49.385+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T17:52:49.386+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T17:54:43.544+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 32476 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T17:54:43.545+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T17:54:43.545+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T17:54:47.478+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 4.867 seconds (process running for 14.649)
+2024-12-13T17:54:48.109+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T17:54:48.109+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T17:54:48.202+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T17:54:48.202+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T17:54:51.046+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T17:54:51.046+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T17:54:51.066+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T17:54:51.066+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T17:54:51.100+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T17:54:51.101+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T17:54:51.109+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T17:54:51.109+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T17:57:31.664+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 28040 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T17:57:31.665+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T17:57:31.666+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T17:57:35.589+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 4.805 seconds (process running for 15.634)
+2024-12-13T17:57:36.759+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T17:57:36.759+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T17:57:36.977+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T17:57:36.977+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T17:57:39.986+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T17:57:39.986+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T17:57:40.009+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T17:57:40.009+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T17:57:40.061+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T17:57:40.061+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T17:57:40.072+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T17:57:40.073+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T17:59:13.264+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 25792 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T17:59:13.265+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T17:59:13.266+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T17:59:17.380+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 5.012 seconds (process running for 14.812)
+2024-12-13T17:59:18.571+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T17:59:18.571+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T17:59:18.800+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T17:59:18.800+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T17:59:21.816+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T17:59:21.817+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T17:59:21.838+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T17:59:21.838+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T17:59:21.883+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T17:59:21.883+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T17:59:21.894+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T17:59:21.894+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:01:46.528+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 6068 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:01:46.529+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:01:46.529+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:01:50.472+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 4.858 seconds (process running for 14.612)
+2024-12-13T18:01:51.614+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:01:51.615+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:01:51.823+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:01:51.824+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:01:52.214+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:01:52.214+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:01:52.240+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:01:52.240+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:01:52.308+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:01:52.308+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:01:52.319+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:01:52.319+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:15:47.167+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 26760 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:15:47.168+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:15:47.168+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:15:51.135+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 4.877 seconds (process running for 15.581)
+2024-12-13T18:15:52.321+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:15:52.321+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:15:52.538+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:15:52.538+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:15:52.815+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:15:52.816+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:15:52.835+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:15:52.835+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:15:52.893+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:15:52.893+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:15:52.904+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:15:52.905+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:25:58.717+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 6704 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:25:58.718+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:25:58.718+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:26:02.681+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 4.985 seconds (process running for 14.95)
+2024-12-13T18:26:03.896+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:26:03.896+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:26:04.108+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:26:04.109+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:26:04.403+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:26:04.404+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:26:04.427+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:26:04.427+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:26:04.465+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:26:04.466+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:26:04.476+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:26:04.476+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:29:13.360+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 30052 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:29:13.361+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:29:13.361+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:29:17.483+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 5.055 seconds (process running for 15.782)
+2024-12-13T18:29:18.681+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:29:18.681+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:29:18.864+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:29:18.921+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:29:18.921+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:29:18.939+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:29:18.949+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:29:18.949+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:29:18.970+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:29:18.971+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:31:01.416+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 29708 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:31:01.416+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:31:01.417+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:31:05.340+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 4.826 seconds (process running for 14.608)
+2024-12-13T18:31:06.518+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:31:06.518+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:31:06.699+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:31:06.761+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:31:06.761+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:31:06.779+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:31:06.779+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:31:06.799+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:31:06.800+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:31:06.810+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:31:06.822+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:31:06.822+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:31:06.869+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:31:06.869+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:31:06.889+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:31:06.889+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:31:06.901+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:31:06.901+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:31:06.915+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:31:06.915+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:31:06.928+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:31:06.928+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:31:39.928+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 23916 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:31:39.928+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:31:39.929+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:31:44.011+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 4.997 seconds (process running for 14.849)
+2024-12-13T18:31:45.138+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:31:45.138+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:31:45.311+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:31:45.353+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:31:45.353+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:31:45.366+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:31:45.366+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:31:45.385+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:31:45.385+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:31:45.396+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:31:45.418+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:31:45.419+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:31:45.430+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:31:45.430+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:31:45.440+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:31:45.441+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:31:45.452+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:31:45.453+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:33:30.958+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 31280 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:33:30.959+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:33:30.960+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:33:34.988+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 4.94 seconds (process running for 15.907)
+2024-12-13T18:33:36.198+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:33:36.198+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:33:36.392+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:33:36.437+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:33:36.437+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:33:36.455+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:33:36.455+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:33:36.474+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:33:36.475+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:33:36.488+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:33:36.500+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:33:36.500+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:33:36.539+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:33:36.539+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:33:36.554+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:33:36.554+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:33:36.565+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:33:36.565+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:33:36.574+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:33:36.574+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:33:36.586+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:33:36.586+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:36:14.795+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 32252 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:36:14.796+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:36:14.796+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:36:18.923+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 5.072 seconds (process running for 15.002)
+2024-12-13T18:36:20.132+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:36:20.132+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:36:20.328+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:36:20.371+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:36:20.371+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:36:20.384+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:36:20.384+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:36:20.405+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:36:20.405+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:36:20.414+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:36:20.441+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:36:20.441+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:36:20.758+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:36:20.758+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:36:20.805+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:36:20.805+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:36:20.816+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:36:20.816+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:36:20.826+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:36:20.826+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:36:20.838+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:36:20.839+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:37:03.269+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 25688 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:37:03.270+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:37:03.270+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:37:07.190+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 4.821 seconds (process running for 14.681)
+2024-12-13T18:37:08.347+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:37:08.348+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:37:08.513+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:37:08.560+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:37:08.560+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:37:08.573+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:37:08.573+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:37:08.592+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:37:08.592+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:37:08.602+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:37:08.614+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:37:08.614+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:37:08.652+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:37:08.653+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:37:08.674+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:37:08.674+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:37:08.688+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:37:08.688+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:37:08.703+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:37:08.703+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:37:08.715+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:37:08.715+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:39:14.543+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 10604 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:39:14.544+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:39:14.545+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:39:18.546+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 4.947 seconds (process running for 14.688)
+2024-12-13T18:39:19.701+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:39:19.702+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:39:19.885+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:39:19.927+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:39:19.927+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:39:19.940+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:39:19.940+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:39:19.960+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:39:19.960+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:39:19.972+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:39:19.996+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:39:19.996+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:39:20.282+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:39:20.283+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:39:20.302+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:39:20.302+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:39:20.315+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:39:20.315+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:39:20.332+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:39:20.333+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:39:20.346+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:39:20.346+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:40:32.912+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 28320 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:40:32.913+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:40:32.914+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:40:36.896+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 4.901 seconds (process running for 15.481)
+2024-12-13T18:40:38.052+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:40:38.052+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:40:38.240+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:40:38.287+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:40:38.287+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:40:38.309+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:40:38.310+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:40:38.331+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:40:38.331+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:40:38.341+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:40:38.369+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:40:38.370+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:40:38.666+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:40:38.667+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:40:38.706+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:40:38.706+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:40:38.716+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:40:38.716+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:40:38.728+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:40:38.728+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:40:38.741+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:40:38.741+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:41:53.179+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 25092 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:41:53.180+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:41:53.180+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:41:57.439+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 5.225 seconds (process running for 16.159)
+2024-12-13T18:41:58.307+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:41:58.307+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:41:58.474+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:41:58.506+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:41:58.506+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:41:58.521+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:41:58.521+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:41:58.541+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:41:58.541+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:41:58.555+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:41:58.598+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:41:58.598+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:41:58.736+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:41:58.736+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:41:58.772+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:41:58.772+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:41:58.787+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:41:58.787+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:41:58.798+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:41:58.798+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:41:58.811+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:41:58.811+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:45:24.595+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 12964 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:45:24.596+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:45:24.596+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:45:31.323+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 7.728 seconds (process running for 18.396)
+2024-12-13T18:45:31.390+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:45:31.404+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:45:31.496+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:45:31.496+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:45:31.519+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:45:31.519+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:46:09.251+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 17388 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:46:09.253+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:46:09.254+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:46:14.118+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 5.884 seconds (process running for 17.278)
+2024-12-13T18:46:15.022+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:46:15.022+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:46:15.227+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:46:15.266+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:46:15.267+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:46:15.286+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:46:15.287+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:46:15.312+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:46:15.312+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:46:15.324+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:46:15.350+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:46:15.350+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:46:15.498+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:46:15.498+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:46:15.530+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:46:15.530+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:46:15.541+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:46:15.541+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:46:15.552+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:46:15.552+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:46:15.563+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:46:15.563+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:46:52.067+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 8964 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:46:52.068+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:46:52.068+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:46:56.863+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 5.758 seconds (process running for 16.033)
+2024-12-13T18:46:57.802+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:46:57.802+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:46:57.961+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:46:57.961+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:46:57.975+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:46:57.975+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:46:57.996+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:46:57.996+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:46:58.060+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:46:58.060+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:46:58.209+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:46:58.210+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:46:58.255+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:46:58.255+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:46:58.269+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:46:58.269+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:46:58.283+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:46:58.283+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:46:58.296+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:46:58.297+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:48:42.336+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 3324 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:48:42.337+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:48:42.338+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:48:47.126+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 5.776 seconds (process running for 16.404)
+2024-12-13T18:48:48.109+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:48:48.109+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:48:48.339+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:48:48.339+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:48:48.354+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:48:48.354+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:48:48.379+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:48:48.379+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:48:48.435+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:48:48.436+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:48:48.590+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:48:48.590+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:48:48.637+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:48:48.637+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:48:48.650+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:48:48.651+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:48:48.663+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:48:48.663+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:48:48.682+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:48:48.682+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:50:00.928+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 23308 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:50:00.930+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:50:00.930+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:50:05.626+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 5.867 seconds (process running for 17.423)
+2024-12-13T18:50:06.582+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:50:06.582+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:50:06.753+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:50:06.753+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:50:06.770+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:50:06.770+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:50:06.794+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:50:06.795+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:50:06.851+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:50:06.852+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:50:07.009+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:50:07.009+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:50:07.041+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:50:07.042+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:50:07.054+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:50:07.054+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:50:07.064+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:50:07.065+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:50:07.078+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:50:07.078+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:50:53.814+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 17.0.11 with PID 7512 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:50:53.815+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:50:53.815+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:50:58.110+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 5.177 seconds (process running for 15.104)
+2024-12-13T18:50:58.962+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:50:58.962+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:50:59.094+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:50:59.095+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:50:59.111+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:50:59.111+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:50:59.134+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:50:59.134+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:50:59.184+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:50:59.184+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:50:59.329+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:50:59.329+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:50:59.360+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:50:59.361+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:50:59.373+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:50:59.373+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:50:59.384+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:50:59.384+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:50:59.396+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:50:59.397+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:52:50.883+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Starting ReviewTest using Java 21.0.2 with PID 12512 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service)
+2024-12-13T18:52:50.884+0100 DEBUG              [main]                         be.pxl.services.ReviewTest    - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-13T18:52:50.885+0100 INFO               [main]                         be.pxl.services.ReviewTest    - No active profile set, falling back to 1 default profile: "default"
+2024-12-13T18:52:56.575+0100 INFO               [main]                         be.pxl.services.ReviewTest    - Started ReviewTest in 6.372 seconds (process running for 15.378)
+2024-12-13T18:52:56.582+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1, postTitle=Draft Title, postContent=Draft Content]
+2024-12-13T18:52:56.777+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=2, postTitle=New Post, postContent=Post Content]
+2024-12-13T18:52:57.177+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:52:57.177+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:52:57.287+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:52:57.288+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Getting all submitted posts
+2024-12-13T18:52:57.302+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:52:57.302+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:52:57.327+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:52:57.327+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:52:57.370+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:52:57.370+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Approving post with id 1
+2024-12-13T18:52:57.494+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:52:57.494+0100 INFO               [main]                         be.pxl.services.services.ReviewService - Rejecting post with id 1
+2024-12-13T18:52:57.524+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:52:57.524+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1
+2024-12-13T18:52:57.535+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2024-12-13T18:52:57.536+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to view submitted posts
+2024-12-13T18:52:57.546+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1
+2024-12-13T18:52:57.546+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to approve post with id 1
+2024-12-13T18:52:57.556+0100 INFO               [main]                         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1
+2024-12-13T18:52:57.556+0100 WARN               [main]                         be.pxl.services.api.controller.ReviewController - Forbidden: User with role viewer attempted to reject post with id 1

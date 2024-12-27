@@ -1,28 +1,13 @@
 <div class="fixed top-4 right-4 w-80">
-    <div *ngIf="loading" class="flex justify-center items-center mb-4">
-      <svg
-        class="animate-spin h-6 w-6 text-blue-600"
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-      >
-        <circle
-          class="opacity-25"
-          cx="12"
-          cy="12"
-          r="10"
-          stroke="currentColor"
-          stroke-width="4"
-        ></circle>
-        <path
-          class="opacity-75"
-          fill="currentColor"
-          d="M4 12a8 8 0 018-8v8H4z"
-        ></path>
-      </svg>
+
+  @if(loading) {
+    <div class="flex justify-center items-center mb-4">
+      <mat-progress-spinner mode="indeterminate" diameter="30" color="primary"></mat-progress-spinner>
     </div>
-  
-    <div *ngIf="error" class="mb-4">
+  }
+
+  @if(error) {
+    <div class="mb-4">
       <div
         class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative"
         role="alert"
@@ -30,32 +15,20 @@
         <span class="block sm:inline">{{ error }}</span>
       </div>
     </div>
-  
-    <div *ngFor="let notification of notifications" class="mb-4">
-      <div class="bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded relative">
+  }
+
+  @for(notification of notifications; track notification.id) {
+    <div class="mb-4">
+      <div class="bg-blue-100 border border-blue-400 text-blue-700 px-4 py-3 rounded relative flex items-center justify-between">
         <span class="block sm:inline">{{ notification.message }}</span>
         <button
           (click)="deleteNotification(notification.id)"
-          class="absolute top-0 bottom-0 right-0 px-4 py-3"
-          aria-label="Close Notification"
+          class="focus:outline-none"
+          aria-label="Delete Notification"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-blue-700 hover:text-blue-900"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-          
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
+          <mat-icon class="text-red-700 hover:text-red-900">X</mat-icon>
         </button>
       </div>
     </div>
-  </div>
-  
+  }
+</div>

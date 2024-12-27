@@ -1,0 +1,647 @@
+2024-12-26T19:06:09.807+0100 INFO               [main]                         be.pxl.services.PostTest      - No active profile set, falling back to 1 default profile: "default"
+2024-12-26T19:06:13.941+0100 INFO               [main]                         be.pxl.services.PostTest      - Started PostTest in 4.956 seconds (process running for 13.953)
+2024-12-26T19:06:13.944+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.000+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.007+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.013+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.018+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.024+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.031+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.037+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.043+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.050+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.057+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.063+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.069+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.073+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.077+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.082+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.086+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.091+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.096+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.100+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.104+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.109+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.113+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.118+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.122+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.127+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.131+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.136+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.141+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.146+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.152+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.159+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.165+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.172+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.177+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.183+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.189+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.196+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.201+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.206+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.212+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.218+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.223+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.229+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.234+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.239+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.245+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.250+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.255+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.289+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.305+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.318+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.326+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.334+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.342+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.350+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.358+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.367+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.377+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.387+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.396+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.404+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.413+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.426+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.434+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.443+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.450+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.457+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.465+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.472+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.479+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.485+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.492+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.499+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.506+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.512+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.519+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.525+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.532+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.538+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.544+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.551+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.559+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.568+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.576+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.585+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.594+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.604+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.611+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.619+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.626+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.633+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.640+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.649+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.657+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.664+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.670+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.676+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.682+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.689+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.695+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.701+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.707+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.712+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.717+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.723+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.730+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.736+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.741+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.748+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.754+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.761+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.767+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.773+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.778+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.783+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.788+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.793+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.797+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.803+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.808+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.815+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.821+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.827+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.833+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.840+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.845+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.852+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.858+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.864+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.871+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.879+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.886+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.893+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.899+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.905+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.910+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.916+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.925+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.932+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.940+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.946+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.951+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.957+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.962+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.967+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.973+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.979+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.985+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.991+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:14.996+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.002+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.007+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.014+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.020+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.026+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.033+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.040+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.045+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: test_redactor
+2024-12-26T19:06:15.045+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting posts that need changing by redactor: test_redactor
+2024-12-26T19:06:15.046+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.051+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.057+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.063+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.069+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.076+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.083+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.091+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.098+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.104+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.110+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.116+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.121+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.126+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.130+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.136+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.142+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.148+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.153+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.159+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.164+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.171+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.176+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.183+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.188+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.192+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.197+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.203+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.209+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.215+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.226+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.233+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
+2024-12-26T19:06:15.233+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Draft Title
+2024-12-26T19:06:15.233+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.240+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.246+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.253+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.259+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.265+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.271+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.275+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.280+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.286+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.291+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.296+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.301+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.306+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.310+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.315+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.319+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.324+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.329+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.334+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.338+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.343+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.347+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.352+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.357+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.361+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.365+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.370+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.375+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.379+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.384+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.389+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.394+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.399+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.414+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to send draft with id 1 for review
+2024-12-26T19:06:15.414+0100 INFO               [main]                         be.pxl.services.services.PostService - Sending draft for review with id: 1
+2024-12-26T19:06:15.445+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.455+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.467+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.476+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.488+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.529+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.535+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.540+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.544+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.549+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.554+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.555+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.559+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.563+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.567+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.572+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.577+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.585+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.594+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.599+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.605+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.611+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.616+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.622+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.627+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.631+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.635+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.640+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.645+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.647+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
+2024-12-26T19:06:15.647+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to get drafts
+2024-12-26T19:06:15.650+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.654+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.658+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.663+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.667+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.672+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to filter posts
+2024-12-26T19:06:15.672+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting filtered posts
+2024-12-26T19:06:15.672+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.677+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.681+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.685+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.689+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.694+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.699+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.703+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.709+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.714+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.719+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.723+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.729+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.736+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.743+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.745+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to add post
+2024-12-26T19:06:15.745+0100 INFO               [main]                         be.pxl.services.services.PostService - Adding post to the database with title: New Post
+2024-12-26T19:06:15.748+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.756+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.778+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.794+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.799+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to save a draft
+2024-12-26T19:06:15.802+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.813+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.819+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.819+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to update post with id 1
+2024-12-26T19:06:15.819+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to update post with id 1
+2024-12-26T19:06:15.826+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.833+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.837+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get all posts
+2024-12-26T19:06:15.837+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting all posts
+2024-12-26T19:06:15.838+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.846+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.851+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.855+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: test_redactor
+2024-12-26T19:06:15.855+0100 INFO               [main]                         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2024-12-26T19:06:15.857+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.863+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.868+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.870+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
+2024-12-26T19:06:15.870+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Original Title
+2024-12-26T19:06:15.873+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.876+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to update post with id 3
+2024-12-26T19:06:15.876+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 3
+2024-12-26T19:06:15.877+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.881+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.886+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.888+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
+2024-12-26T19:06:15.888+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
+2024-12-26T19:06:15.891+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.896+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.901+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.908+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.909+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to add post
+2024-12-26T19:06:15.909+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to add a post
+2024-12-26T19:06:15.916+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.922+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.927+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
+2024-12-26T19:06:15.927+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Draft Title
+2024-12-26T19:06:15.932+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.940+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.947+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.954+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.962+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.966+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 1
+2024-12-26T19:06:15.966+0100 WARN               [main]                         be.pxl.services.api.controller.NotificationController - Forbidden: User with role viewer attempted to delete notification with id 1
+2024-12-26T19:06:15.968+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.975+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.980+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: test_redactor
+2024-12-26T19:06:15.980+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to get posts that need changing
+2024-12-26T19:06:15.984+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.989+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.993+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
+2024-12-26T19:06:15.993+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Test Post
+2024-12-26T19:06:15.994+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:15.999+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.001+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to send a notification
+2024-12-26T19:06:16.001+0100 INFO               [main]                         be.pxl.services.services.NotificationService - creating a notification in the service class
+2024-12-26T19:06:16.004+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.009+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.014+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.019+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.023+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.028+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.033+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.036+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to send draft with id 1 for review
+2024-12-26T19:06:16.036+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to send a draft to review
+2024-12-26T19:06:16.037+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.041+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.045+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.045+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.049+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.053+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
+2024-12-26T19:06:16.053+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
+2024-12-26T19:06:16.054+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.060+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.066+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.069+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: test_redactor
+2024-12-26T19:06:16.070+0100 WARN               [main]                         be.pxl.services.api.controller.NotificationController - Forbidden: User with role viewer attempted to get notifications for redactor test_redactor
+2024-12-26T19:06:16.071+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.075+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.080+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 1
+2024-12-26T19:06:16.080+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
+2024-12-26T19:06:16.080+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.085+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.090+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.095+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.099+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.104+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.108+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.113+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.223+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.227+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:06:16.232+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:36.167+0100 INFO               [main]                         be.pxl.services.PostTest      - No active profile set, falling back to 1 default profile: "default"
+2024-12-26T19:07:40.560+0100 INFO               [main]                         be.pxl.services.PostTest      - Started PostTest in 5.467 seconds (process running for 15.284)
+2024-12-26T19:07:40.569+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.656+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.661+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.668+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.673+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.680+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.687+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.694+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.701+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.706+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.713+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.719+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.725+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.730+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.735+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.741+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.747+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.753+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.758+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.769+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.775+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.779+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.784+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.790+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.795+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.801+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.806+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.812+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.820+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.826+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.832+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.838+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.843+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.848+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.854+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.859+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.865+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.873+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.881+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.887+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.894+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.900+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.907+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.915+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.921+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.927+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.933+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.940+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.947+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.952+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.956+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.961+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.967+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.992+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:40.998+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.003+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.008+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.012+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.017+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.022+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.026+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.031+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.036+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.041+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.046+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.051+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.057+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.064+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.071+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.078+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.084+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.091+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.098+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.104+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.110+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.117+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.122+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.126+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.131+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.135+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.139+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.144+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.148+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.151+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.156+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.160+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.165+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.171+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.176+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.181+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.185+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: test_redactor
+2024-12-26T19:07:41.185+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting posts that need changing by redactor: test_redactor
+2024-12-26T19:07:41.186+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.191+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.197+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.202+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.206+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.212+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.217+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.222+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.227+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.233+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.244+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.249+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.255+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.261+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.262+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
+2024-12-26T19:07:41.262+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Draft Title
+2024-12-26T19:07:41.266+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.271+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.276+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.280+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.285+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.291+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.296+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.300+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.306+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.312+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.323+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to send draft with id 1 for review
+2024-12-26T19:07:41.323+0100 INFO               [main]                         be.pxl.services.services.PostService - Sending draft for review with id: 1
+2024-12-26T19:07:41.341+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.354+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.366+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.371+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.376+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.381+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.386+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.390+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.391+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.397+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.404+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.410+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.416+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.419+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
+2024-12-26T19:07:41.419+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to get drafts
+2024-12-26T19:07:41.421+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.427+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.435+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.443+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.445+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to filter posts
+2024-12-26T19:07:41.445+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting filtered posts
+2024-12-26T19:07:41.451+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.459+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.465+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.472+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.478+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.482+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to add post
+2024-12-26T19:07:41.482+0100 INFO               [main]                         be.pxl.services.services.PostService - Adding post to the database with title: New Post
+2024-12-26T19:07:41.483+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.487+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.492+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.498+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.505+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.511+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.514+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to save a draft
+2024-12-26T19:07:41.515+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.521+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.527+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.529+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to update post with id 1
+2024-12-26T19:07:41.529+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to update post with id 1
+2024-12-26T19:07:41.533+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.539+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.543+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get all posts
+2024-12-26T19:07:41.543+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting all posts
+2024-12-26T19:07:41.544+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.549+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.554+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.558+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: test_redactor
+2024-12-26T19:07:41.558+0100 INFO               [main]                         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2024-12-26T19:07:41.559+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.563+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.569+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.572+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
+2024-12-26T19:07:41.572+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Original Title
+2024-12-26T19:07:41.574+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.579+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.580+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to update post with id 3
+2024-12-26T19:07:41.580+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 3
+2024-12-26T19:07:41.585+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.590+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.592+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
+2024-12-26T19:07:41.592+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
+2024-12-26T19:07:41.595+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.600+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.606+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.612+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.614+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to add post
+2024-12-26T19:07:41.614+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to add a post
+2024-12-26T19:07:41.618+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.624+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.628+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
+2024-12-26T19:07:41.628+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Draft Title
+2024-12-26T19:07:41.630+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.636+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.642+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.648+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.653+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.657+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 1
+2024-12-26T19:07:41.657+0100 WARN               [main]                         be.pxl.services.api.controller.NotificationController - Forbidden: User with role viewer attempted to delete notification with id 1
+2024-12-26T19:07:41.657+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.664+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.669+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.670+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: test_redactor
+2024-12-26T19:07:41.670+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to get posts that need changing
+2024-12-26T19:07:41.676+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.682+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.686+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
+2024-12-26T19:07:41.686+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Test Post
+2024-12-26T19:07:41.689+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.694+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.695+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to send a notification
+2024-12-26T19:07:41.695+0100 INFO               [main]                         be.pxl.services.services.NotificationService - creating a notification in the service class
+2024-12-26T19:07:41.701+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.707+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.712+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.718+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.723+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.729+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.734+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.737+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to send draft with id 1 for review
+2024-12-26T19:07:41.737+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to send a draft to review
+2024-12-26T19:07:41.739+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.745+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.750+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.750+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.757+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.761+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
+2024-12-26T19:07:41.761+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
+2024-12-26T19:07:41.762+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.768+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.773+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.776+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: test_redactor
+2024-12-26T19:07:41.777+0100 WARN               [main]                         be.pxl.services.api.controller.NotificationController - Forbidden: User with role viewer attempted to get notifications for redactor test_redactor
+2024-12-26T19:07:41.778+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.783+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.788+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 1
+2024-12-26T19:07:41.788+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
+2024-12-26T19:07:41.788+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.793+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.799+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.805+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.810+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.816+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.930+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.932+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:41.933+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:42.266+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting posts that need changing by redactor: test_redactor
+2024-12-26T19:07:42.296+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting filtered posts
+2024-12-26T19:07:42.304+0100 INFO               [main]                         be.pxl.services.services.PostService - Sending draft for review with id: 1
+2024-12-26T19:07:42.318+0100 INFO               [main]                         be.pxl.services.services.PostService - Adding post to the database with title: Test Title
+2024-12-26T19:07:42.322+0100 INFO               [main]                         be.pxl.services.services.PostService - Sending draft for review with id: 1
+2024-12-26T19:07:42.325+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
+2024-12-26T19:07:42.328+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting all posts
+2024-12-26T19:07:42.330+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:42.334+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
+2024-12-26T19:07:42.336+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
+2024-12-26T19:07:42.338+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
+2024-12-26T19:07:42.402+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
+2024-12-26T19:07:42.404+0100 INFO               [main]                         be.pxl.services.services.NotificationService - creating a notification in the service class
+2024-12-26T19:07:42.407+0100 INFO               [main]                         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2024-12-26T19:07:42.410+0100 INFO               [main]                         be.pxl.services.services.NotificationService - creating a notification in the service class
+2024-12-26T19:07:42.418+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class

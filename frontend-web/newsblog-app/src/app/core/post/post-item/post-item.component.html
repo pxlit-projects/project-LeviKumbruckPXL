@@ -1,0 +1,25 @@
+<li class="p-4 border rounded shadow-md bg-gray-100 hover:bg-gray-200">
+    <h2 class="text-lg font-semibold text-blue-600">{{ post.title }}</h2>
+    <p class="text-gray-700">{{ post.content }}</p>
+    <div class="text-sm text-gray-500">
+      <span class="text-red-900">By {{ post.redactor }}</span> |
+      <span>Date: {{ post.createdDate | date: 'medium' }}</span>
+    </div>
+    <div class="mt-2 flex space-x-4">
+      <button
+        (click)="onViewComments()"
+        class="text-blue-600 underline hover:text-blue-800"
+      >
+        View Comments
+      </button>
+      @if(userRole === 'redactor') {
+        <button
+          (click)="onEdit()"
+          class="text-blue-600 underline hover:text-blue-800"
+        >
+          Edit
+        </button>
+      }
+    </div>
+  </li>
+  

@@ -1,3 +1,9 @@
+@if(isRedactor()) {
 <app-notifications></app-notifications>
-<app-navbar *ngIf="!isLoginPage()"></app-navbar>
+}
+
+@if(!isLoginPage()) {
+<app-navbar></app-navbar>
+}
+
 <router-outlet></router-outlet>

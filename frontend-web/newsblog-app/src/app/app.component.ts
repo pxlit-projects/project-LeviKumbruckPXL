@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { CommonModule } from '@angular/common';
 import { NotificationsComponent } from "./core/notifications/notifications.component";
+import { AuthService } from './shared/services/authService/auth.service';
 
 
 @Component({
@@ -13,11 +14,18 @@ import { NotificationsComponent } from "./core/notifications/notifications.compo
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  constructor(private router: Router) {}
 
+  router: Router = inject(Router);
+  authService: AuthService = inject(AuthService);
+  role = '';
   title = 'newsblog-app';
 
   isLoginPage(): boolean {
-    return this.router.url === '/login'; // Adjust if your login route is different
+    return this.router.url === '/login'; 
+  }
+
+  isRedactor(): boolean {
+    this.role = this.authService.getRole() ?? '';
+    return this.role === 'redactor';
   }
 }

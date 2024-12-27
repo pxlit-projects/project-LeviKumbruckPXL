@@ -1,0 +1,48 @@
+<div class="container mx-auto mt-8 p-4">
+    <!-- Filter compnentnentje -->
+    <app-filter-posts (filtered)="onFilteredPosts($event)" (reset)="onResetFilters()"></app-filter-posts>
+
+    <!-- Header -->
+    @if(!selectedPost && !isFiltered) {
+    <h1 class="text-2xl font-bold my-4">All Posts</h1>
+    }
+
+    <!-- Post List -->
+    @if(!selectedPost && posts.length > 0 && !isFiltered) {
+
+    @for(post of posts; track post.id) {
+    <ul class="my-3">
+        <app-post-item [post]="post" [userRole]="userRole" (edit)="editPost($event)"
+            (viewComments)="viewComments($event)"></app-post-item>
+    </ul>
+    }
+
+    }
+
+    <!-- Filtered Posts -->
+    @if(isFiltered && filteredPosts.length > 0) {
+    @for(post of filteredPosts; track post.id) {
+    <ul class="my-3">
+        <app-post-item [post]="post" [userRole]="userRole" (edit)="editPost($event)"
+            (viewComments)="viewComments($event)"></app-post-item>
+    </ul>
+    }
+
+
+    }
+
+    <!-- Edit Post -->
+    @if(selectedPost) {
+    <app-edit-post [post]="selectedPost!" (save)="saveUpdatedPost($event)" (cancelEdit)="cancelEdit()"></app-edit-post>
+    }
+
+    <!-- No Posts Message -->
+    @if(!isFiltered && posts.length === 0) {
+    <div class="text-gray-600 mt-3">No posts available.</div>
+    }
+
+    <!-- No Fitlered Posts Message -->
+    @if(isFiltered && filteredPosts.length === 0) {
+    <div class="text-gray-600 mt-3">No posts available with these filters.</div>
+    }
+</div>

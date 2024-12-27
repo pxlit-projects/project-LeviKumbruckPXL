@@ -1,0 +1,48 @@
+<div class="container mx-auto mt-8 p-4">
+  <h1 class="text-2xl font-bold mb-4">My Drafts</h1>
+
+  @if(errorMessage) {
+    <div class="text-red-500">{{ errorMessage }}</div>
+  }
+
+  @if(drafts.length > 0) {
+    <ul class="space-y-4">
+      @for(draft of drafts; track draft.id) {
+        <li class="p-4 border rounded shadow-md bg-gray-100 hover:bg-gray-200">
+          <h2 class="text-lg font-semibold text-blue-600">{{ draft.title }}</h2>
+          <p class="text-gray-700">{{ draft.content }}</p>
+          <div class="text-sm text-gray-500">
+            <span>Last updated: {{ draft.createdDate | date: 'medium' }}</span>
+          </div>
+          <div class="mt-2 space-x-2">
+            <button
+              (click)="editDraft(draft)"
+              class="py-1 px-3 bg-blue-600 text-white rounded hover:bg-blue-700"
+            >
+              Edit
+            </button>
+            <button
+              (click)="sendDraftForReview(draft)"
+              class="py-1 px-3 bg-green-600 text-white rounded hover:bg-green-700"
+            >
+              Send for review
+            </button>
+          </div>
+        </li>
+      }
+    </ul>
+  } 
+  @else {
+    <div class="text-gray-600">No drafts available.</div>
+  }
+
+  @if(selectedDraft) {
+    <div class="mt-8">
+      <app-edit-draft
+        [draft]="selectedDraft"
+        (cancelEdit)="cancelEdit()"
+        (draftUpdated)="updateDraftList($event)"
+      ></app-edit-draft>
+    </div>
+  }
+</div>

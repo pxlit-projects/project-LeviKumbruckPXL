@@ -3,16 +3,15 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Comment } from '../../models/comment.model';
 import { AuthService } from '../authService/auth.service';
+import { environment } from '../../../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class CommentService {
-  private apiUrl = 'http://localhost:8083/comment';
-
   constructor(private http: HttpClient, private authService: AuthService) {}
   
-  private getHeaders(contentType: string = 'application/json'): HttpHeaders {
+  private getHeaders(contentType = 'application/json'): HttpHeaders {
     const role = this.authService.getRole();
     return new HttpHeaders({
       Role: role ||'',
@@ -21,25 +20,25 @@ export class CommentService {
   }
 
   getCommentsByPostId(postId: number): Observable<Comment[]> {
-    return this.http.get<Comment[]>(`${this.apiUrl}/${postId}`, {
+    return this.http.get<Comment[]>(`${environment.commentUrl}/${postId}`, {
       headers: this.getHeaders(),
     });
   }
 
   addComment(postId: number, comment: Comment): Observable<void> {
-    return this.http.post<void>(`${this.apiUrl}/${postId}`, comment, {
+    return this.http.post<void>(`${environment.commentUrl}/${postId}`, comment, {
       headers: this.getHeaders(),
     });
   }
 
   editComment(commentId: number, comment: Comment): Observable<void> {
-    return this.http.put<void>(`${this.apiUrl}/${commentId}`, comment, {
+    return this.http.put<void>(`${environment.commentUrl}/${commentId}`, comment, {
       headers: this.getHeaders(),
     });
   }
 
   deleteComment(commentId: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/${commentId}`, {
+    return this.http.delete<void>(`${environment.commentUrl}/${commentId}`, {
       headers: this.getHeaders(),
     });
   }

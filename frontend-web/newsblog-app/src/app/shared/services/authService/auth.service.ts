@@ -7,8 +7,6 @@ export class AuthService {
 
   private currentUser: { username: string; role: string } | null = null;
 
-  constructor() {}
-
   login(username: string, role: string): void {
     this.currentUser = { username, role };
     sessionStorage.setItem('user', JSON.stringify(this.currentUser));

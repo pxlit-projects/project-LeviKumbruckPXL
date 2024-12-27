@@ -1,0 +1,31 @@
+<div class="p-6 bg-gray-100 min-h-screen">
+    <div class="mb-6">
+      <h1 class="text-3xl font-bold text-gray-800">Posts that need reviewing:</h1>
+    </div>
+  
+    @if(errorMessage) {
+      <div class="mb-4 bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative" role="alert">
+        <strong class="font-bold">Error:</strong>
+        <span class="block sm:inline">{{ errorMessage }}</span>
+      </div>
+    }
+  
+    @if(reviews.length > 0) {
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        @for(review of reviews; track  review.postId) {
+          <app-under-review-item
+            [review]="review"
+            [userRole]="userRole"
+            (approve)="approvePost($event)"
+            (reject)="rejectPost($event.postId, $event.comment)"
+          ></app-under-review-item>
+        }
+      </div>
+    } 
+    @else {
+      <div class="text-center mt-6">
+        <p class="text-gray-600 text-lg">No posts are under review at the moment!</p>
+      </div>
+    }
+  </div>
+  

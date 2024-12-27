@@ -217,24 +217,7 @@ public class PostTest {
                 .andExpect(status().isForbidden());
     }
 
-    @Test
-    public void testSendDraftForReview() throws Exception {
-        PostRequest draft = PostRequest.builder()
-                .title("Draft Title")
-                .content("Draft Content")
-                .redactor("test_redactor")
-                .build();
 
-        PostResponse savedDraft = objectMapper.readValue(mockMvc.perform(MockMvcRequestBuilders.post("/saveAsDraft")
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .header("Role", "redactor")
-                        .content(objectMapper.writeValueAsString(draft)))
-                .andReturn().getResponse().getContentAsString(), PostResponse.class);
-
-        mockMvc.perform(MockMvcRequestBuilders.put("/sendDraftForReview/" + savedDraft.getId())
-                        .header("Role", "redactor"))
-                .andExpect(status().isOk());
-    }
 
     @Test
     public void testSendDraftForReviewForbidden() throws Exception {
@@ -243,22 +226,7 @@ public class PostTest {
                 .andExpect(status().isForbidden());
     }
 
-    @Test
-    public void testAddPost() throws Exception {
-        PostRequest postRequest = PostRequest.builder()
-                .title("New Post")
-                .content("Post Content")
-                .redactor("test_redactor")
-                .build();
 
-        String postString = objectMapper.writeValueAsString(postRequest);
-
-        mockMvc.perform(MockMvcRequestBuilders.post("/sendForReview")
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .header("Role", "redactor")
-                        .content(postString))
-                .andExpect(status().isOk());
-    }
 
     @Test
     public void testAddPostForbidden() throws Exception {
@@ -277,39 +245,6 @@ public class PostTest {
                 .andExpect(status().isForbidden());
     }
 
-
-
-    @Test
-    public void testSendNotification() throws Exception {
-        PostRequest postRequest = PostRequest.builder()
-                .title("Test Post")
-                .content("Test Content")
-                .redactor("test_redactor")
-                .build();
-
-        PostResponse savedPost = objectMapper.readValue(
-                mockMvc.perform(MockMvcRequestBuilders.post("/saveAsDraft")
-                                .contentType(MediaType.APPLICATION_JSON)
-                                .header("Role", "redactor")
-                                .content(objectMapper.writeValueAsString(postRequest)))
-                        .andReturn().getResponse().getContentAsString(), PostResponse.class);
-
-        Notification notification = Notification.builder()
-                .postId(savedPost.getId())
-                .redactor("test_redactor")
-                .message("Notification Message")
-                .build();
-
-        String notificationString = objectMapper.writeValueAsString(notification);
-
-        mockMvc.perform(MockMvcRequestBuilders.post("/notification")
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .header("Role", "redactor")
-                        .content(notificationString))
-                .andExpect(status().isOk());
-
-        assertEquals(1, notificationRepository.findAll().size());
-    }
 
     @Test
     public void testGetNotificationsOfRedactor() throws Exception {

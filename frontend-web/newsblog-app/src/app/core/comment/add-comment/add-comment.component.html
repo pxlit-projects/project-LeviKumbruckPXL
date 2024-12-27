@@ -1,0 +1,32 @@
+<div class="mb-6">
+    <h2 class="text-xl font-semibold mb-2">Add a Comment</h2>
+    <form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+      <textarea
+        formControlName="content"
+        class="w-full p-2 border rounded"
+        rows="3"
+        placeholder="Write your comment here..."
+      ></textarea>
+      @if(
+        commentForm.get('content')?.invalid &&
+        (commentForm.get('content')?.dirty || commentForm.get('content')?.touched)
+      ) {
+        <div class="text-red-500 mt-2">
+          @if(commentForm.get('content')?.errors?.['required']) {
+            <span>Comment content is required.</span>
+          }
+          @if(commentForm.get('content')?.errors?.['minlength']) {
+            <span>Comment must be at least 1 character.</span>
+          }
+        </div>
+      }
+      <button
+        type="submit"
+        class="mt-2 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
+        [disabled]="commentForm.invalid"
+      >
+        Submit Comment
+      </button>
+    </form>
+  </div>
+  

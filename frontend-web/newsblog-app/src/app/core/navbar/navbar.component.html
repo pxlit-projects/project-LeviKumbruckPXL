@@ -2,32 +2,59 @@
   <div class="container mx-auto flex justify-between items-center">
     <div class="text-lg font-bold">PXL NewsBlog</div>
     <div class="flex items-center space-x-4">
-      <button
-        [ngClass]="{'border-b-2 border-blue-600': currentRoute === '/posts'}"
-        (click)="navigateToPosts()"
-        class="hover:border-b-2 hover:border-blue-500 text-white px-2 py-1"
-      >
-        All Posts
-      </button>
-      
-      <button
-        *ngIf="userRole === 'redactor'"
-        [ngClass]="{'border-b-2 border-blue-600': currentRoute === '/addPost'}"
-        (click)="navigateToAddPost()"
-        class="hover:border-b-2 hover:border-blue-500 text-white px-2 py-1"
-      >
-        Make Posts
-      </button>
-      
-      <button
-        *ngIf="userRole === 'redactor'"
-        [ngClass]="{'border-b-2 border-blue-600': currentRoute === '/under-review'}"
-        (click)="navigateToUnderReview()"
-        class="hover:border-b-2 hover:border-blue-500 text-white px-2 py-1"
-      >
-        Review Posts
-      </button>
-      
+      @if(currentRoute === '/posts') {
+        <button
+          class="border-b-2 border-blue-600 hover:border-b-2 hover:border-blue-500 text-white px-2 py-1"
+          (click)="navigateToPosts()"
+        >
+          All Posts
+        </button>
+      } 
+      @else {
+        <button
+          class="hover:border-b-2 hover:border-blue-500 text-white px-2 py-1"
+          (click)="navigateToPosts()"
+        >
+          All Posts
+        </button>
+      }
+
+      @if(userRole === 'redactor') {
+        @if(currentRoute === '/addPost') {
+          <button
+            class="border-b-2 border-blue-600 hover:border-b-2 hover:border-blue-500 text-white px-2 py-1"
+            (click)="navigateToAddPost()"
+          >
+            My Posts
+          </button>
+        } 
+        @else {
+          <button
+            class="hover:border-b-2 hover:border-blue-500 text-white px-2 py-1"
+            (click)="navigateToAddPost()"
+          >
+            My Posts
+          </button>
+        }
+
+        @if(currentRoute === '/under-review') {
+          <button
+            class="border-b-2 border-blue-600 hover:border-b-2 hover:border-blue-500 text-white px-2 py-1"
+            (click)="navigateToUnderReview()"
+          >
+            Review Posts
+          </button>
+        } 
+        @else {
+          <button
+            class="hover:border-b-2 hover:border-blue-500 text-white px-2 py-1"
+            (click)="navigateToUnderReview()"
+          >
+            Review Posts
+          </button>
+        }
+      }
+
       <button
         (click)="logout()"
         class="bg-red-600 px-4 py-2 rounded text-white hover:bg-red-700"

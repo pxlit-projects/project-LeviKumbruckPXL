@@ -1,18 +1,17 @@
 import { Routes } from '@angular/router';
 import { LoginComponent } from './core/login/login.component';
-import { AddPostComponent } from './core/add-post/add-post.component';
-import { AuthGuard } from './guards/auth.guard';
-import { PostsComponent } from './core/posts/posts.component';
+import { AddPostComponent } from './core/post/add-post/add-post.component';
+import { authGuard } from './guards/auth.guard';
 import { isRedactorGuard } from './guards/role.guard';
-import { UnderReviewComponent } from './core/under-review/under-review.component';
-import { CommentsComponent } from './core/comments/comments.component';
+import { PostListComponent } from './core/post/post-list/post-list.component';
+import { CommentListComponent } from './core/comment/comment-list/comment-list.component';
+import { UnderReviewListComponent } from './core/review/under-review-list/under-review-list.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/login', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
-    { path: 'addPost', component: AddPostComponent, canActivate : [AuthGuard, isRedactorGuard] },
-    { path: 'posts', component: PostsComponent, canActivate : [AuthGuard] },
-    { path: 'under-review', component: UnderReviewComponent, canActivate: [AuthGuard, isRedactorGuard] },
-    { path: 'posts/:postId/comments', component: CommentsComponent, canActivate: [AuthGuard] },
-
+    { path: 'addPost', component: AddPostComponent, canActivate : [authGuard, isRedactorGuard] },
+    { path: 'posts', component: PostListComponent, canActivate : [authGuard] },
+    { path: 'under-review', component: UnderReviewListComponent, canActivate: [authGuard, isRedactorGuard] },
+    { path: 'posts/:postId/comments', component: CommentListComponent, canActivate: [authGuard] },
 ];

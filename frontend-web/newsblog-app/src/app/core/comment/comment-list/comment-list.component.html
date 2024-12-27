@@ -1,0 +1,47 @@
+<div class="container mx-auto mt-8 p-4">
+  <button (click)="goBack()" class="text-blue-600 underline hover:text-blue-800 mb-4">
+    &larr; Back to Posts
+  </button>
+
+  <h1 class="text-2xl font-bold mb-6">Comments for Post #{{ postId }}</h1>
+
+  @if(errorMessage) {
+    <div class="text-red-500 mb-4 flex justify-between items-center">
+      <span>{{ errorMessage }}</span>
+      <button (click)="errorMessage = ''" aria-label="Close Error" class="focus:outline-none">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+  }
+
+  <div class="mb-6">
+    <app-add-comment
+      (commentAdded)="addComment($event)"
+      (errorOccurred)="errorMessage = $event"
+    ></app-add-comment>
+  </div>
+
+  <div>
+    <h2 class="text-xl font-semibold mb-4">All Comments</h2>
+    @if(comments.length > 0) {
+        @for (comment of comments; track comment.id) {
+          <ul class="my-4">
+          <app-comment-item
+            [comment]="comment"
+            [currentUser]="currentUser"
+            [isEditing]="editingCommentId === comment.id"
+            [editedContent]="editingCommentId === comment.id ? editedCommentContent : ''"
+            (startEdit)="startEditing($event)"
+            (delete)="deleteComment($event)"
+            (saveEdit)="saveEditedComment($event.id, $event.content)"
+            (cancelEdit)="cancelEditing()"
+          ></app-comment-item>
+        </ul>
+
+        }
+    } 
+    @else {
+      <div class="text-gray-600">No comments available for this post.</div>
+    }
+  </div>
+</div>
