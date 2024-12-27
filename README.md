@@ -21,7 +21,7 @@ Each folder contains its own specific `.gitignore` file.
 1. Run the `docker-compose.yml` file located in the root of the repository. This will:
    - Set up the necessary databases.
    - Start RabbitMQ.
-   - Start frontendd
+   - Start frontend
 
 2. After running the `docker-compose.yml` file, start the backend microservices locally in the following order:
    - **Config Service**
