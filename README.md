@@ -32,6 +32,6 @@ Each folder contains its own specific `.gitignore` file.
 #### Frontend
 
 1. Use the `docker-compose.yml` file to set up and run the frontend.
-   - The `docker-compose.yml` file utilizes the `Dockerfile` located in the `_frontend-web_` folder.
+   - The `docker-compose.yml` file utilizes the `Dockerfile` located in the `_frontend-web_/newsblog-app` folder.
    
 2. Once the setup is complete, the frontend will run on **port 4200**.
