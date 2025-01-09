@@ -16,4 +16,22 @@ Each folder contains its own specific `.gitignore` file.
 
 ## How to setup and run this application
 
-:heavy_check_mark:_(COMMENT) Add setup instructions and provide some direction to run the whole  application: frontend to backend._
+#### Backend
+
+1. Run the `docker-compose.yml` file located in the root of the repository. This will:
+   - Set up the necessary databases.
+   - Start RabbitMQ.
+   - Start frontend
+
+2. After running the `docker-compose.yml` file, start the backend microservices locally in the following order:
+   - **Config Service**
+   - **Discovery Service**
+   - **Gateway Service**
+   - Remaining services (in your preferred order).
+
+#### Frontend
+
+1. Use the `docker-compose.yml` file to set up and run the frontend.
+   - The `docker-compose.yml` file utilizes the `Dockerfile` located in the `_frontend-web_/newsblog-app` folder.
+   
+2. Once the setup is complete, the frontend will run on **port 4200**.
