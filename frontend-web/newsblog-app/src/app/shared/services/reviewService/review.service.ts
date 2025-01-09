@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { HttpClient, HttpErrorResponse, HttpHeaders } from '@angular/common/http';
+import { catchError, Observable, tap, throwError } from 'rxjs';
 import { Review } from '../../models/review.model';
 import { AuthService } from '../authService/auth.service';
 import { environment } from '../../../../environments/environment';
@@ -19,20 +19,37 @@ export class ReviewService {
     });
   }
 
-  getAllReviews (): Observable<Review[]> {
-    return this.http.get<Review[]>(`${environment.reviewUrl}/viewSubmittedPosts`, {
-      headers: this.getHeaders(),
-    });  }
+  getAllReviews(): Observable<Review[]> {
+    return this.http
+      .get<Review[]>(`${environment.reviewUrl}/viewSubmittedPosts`, {
+        headers: this.getHeaders(),
+      })
+      .pipe(
+        tap((reviews) => console.log('Fetched reviews:', reviews)),
+        catchError(this.handleError)
+      );
+  }
 
   approvePost(postId: string): Observable<void> {
-    return this.http.put<void>(`${environment.reviewUrl}/approve/${postId}`, {}, {
-      headers: this.getHeaders(),
-    });  }
+    return this.http
+      .put<void>(`${environment.reviewUrl}/approve/${postId}`, {}, {
+        headers: this.getHeaders(),
+      })
+      .pipe(
+        tap(() => console.log(`Post approved: ${postId}`)),
+        catchError(this.handleError)
+      );
+  }
   
   rejectPost(postId: string, comment: string): Observable<void> {
     return this.http.put<void>(`${environment.reviewUrl}/reject/${postId}`, comment, {
       headers: this.getHeaders(),
     });
+  }
+
+  private handleError(error: HttpErrorResponse) {
+    console.error('An error occurred:', error);
+    return throwError(() => new Error('Something bad happened; please try again later.'));
   }
   
 }

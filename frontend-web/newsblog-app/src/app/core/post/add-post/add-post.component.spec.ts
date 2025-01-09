@@ -1,23 +1,21 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { TestBed } from '@angular/core/testing';
 import { AddPostComponent } from './add-post.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-describe('AddPostComponent', () => {
-  let component: AddPostComponent;
-  let fixture: ComponentFixture<AddPostComponent>;
-
+describe('AddPostComponent (Smoke Test)', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AddPostComponent]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(AddPostComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+      imports: [
+        AddPostComponent,
+        HttpClientTestingModule, 
+      ],
+    }).compileComponents();
   });
 
-  it('should create', () => {
+  it('should create the component', () => {
+    const fixture = TestBed.createComponent(AddPostComponent);
+    const component = fixture.componentInstance;
+    fixture.detectChanges(); // triggert ngOnInit
     expect(component).toBeTruthy();
   });
 });
