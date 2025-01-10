@@ -1,395 +1,552 @@
-2025-01-09T11:54:52.016+0100 INFO               [main]                         be.pxl.services.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-01-09T11:54:55.892+0100 INFO               [main]                         be.pxl.services.PostServiceApplication - Started PostServiceApplication in 4.692 seconds (process running for 5.17)
-2025-01-09T11:54:58.683+0100 INFO               [main]                         be.pxl.services.CommentServiceApplication - Starting CommentServiceApplication using Java 17.0.11 with PID 27596 (C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\comment-service\target\classes started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog)
-2025-01-09T11:54:58.684+0100 DEBUG              [main]                         be.pxl.services.CommentServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-09T11:54:58.685+0100 INFO               [main]                         be.pxl.services.CommentServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-01-09T11:55:00.941+0100 INFO               [main]                         be.pxl.services.CommentServiceApplication - Started CommentServiceApplication in 2.792 seconds (process running for 3.135)
-2025-01-09T11:55:05.270+0100 INFO               [main]                         be.pxl.services.ReviewServiceApplication - Starting ReviewServiceApplication using Java 17.0.11 with PID 33528 (C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service\target\classes started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog)
-2025-01-09T11:55:05.271+0100 DEBUG              [main]                         be.pxl.services.ReviewServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-09T11:55:05.272+0100 INFO               [main]                         be.pxl.services.ReviewServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-01-09T11:55:07.928+0100 INFO               [main]                         be.pxl.services.ReviewServiceApplication - Started ReviewServiceApplication in 3.206 seconds (process running for 3.609)
-2025-01-09T11:55:50.339+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T11:55:50.339+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T11:55:50.339+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T11:55:50.339+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T11:55:50.339+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T11:55:50.339+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T11:55:55.715+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to send draft with id 1552 for review
-2025-01-09T11:55:55.716+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Sending draft for review with id: 1552
-2025-01-09T11:55:55.766+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1552, postTitle=draft nummer 100fdfdfdfdf, postContent=Hallo lieve jongensfdfdfd]
-2025-01-09T11:55:56.889+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
-2025-01-09T11:55:56.889+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.ReviewService - Getting all submitted posts
-2025-01-09T11:55:58.745+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1852
-2025-01-09T11:55:58.745+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.services.ReviewService - Approving post with id 1852
-2025-01-09T11:55:58.820+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.NotificationController - Received request to send a notification
-2025-01-09T11:55:58.820+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.NotificationService - creating a notification in the service class
-2025-01-09T11:55:58.858+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1852
-2025-01-09T11:56:04.838+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T11:56:04.838+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T11:56:04.838+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T11:56:04.838+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T11:56:05.256+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T11:56:05.256+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T11:56:12.471+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T11:56:12.471+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T11:56:12.471+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T11:56:12.471+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T11:56:14.666+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
-2025-01-09T11:56:14.666+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.services.ReviewService - Getting all submitted posts
-2025-01-09T11:56:31.491+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T11:56:31.491+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T11:56:31.491+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T11:56:31.491+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T11:56:36.477+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T11:56:36.478+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T11:56:45.148+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1402
-2025-01-09T11:56:45.148+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CommentService - Getting comments of post with id 1402
-2025-01-09T11:56:50.297+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T11:56:50.297+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T18:52:15.786+0100 INFO               [main]                         be.pxl.services.CommentServiceApplication - Starting CommentServiceApplication using Java 17.0.11 with PID 30420 (C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\comment-service\target\classes started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog)
-2025-01-09T18:52:15.787+0100 DEBUG              [main]                         be.pxl.services.CommentServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-09T18:52:15.787+0100 INFO               [main]                         be.pxl.services.CommentServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-01-09T18:52:17.424+0100 INFO               [main]                         be.pxl.services.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-01-09T18:52:18.632+0100 INFO               [main]                         be.pxl.services.CommentServiceApplication - Started CommentServiceApplication in 3.568 seconds (process running for 3.94)
-2025-01-09T18:52:20.612+0100 INFO               [main]                         be.pxl.services.PostServiceApplication - Started PostServiceApplication in 3.935 seconds (process running for 4.365)
-2025-01-09T18:52:20.711+0100 INFO               [main]                         be.pxl.services.ReviewServiceApplication - Starting ReviewServiceApplication using Java 17.0.11 with PID 14252 (C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service\target\classes started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog)
-2025-01-09T18:52:20.712+0100 DEBUG              [main]                         be.pxl.services.ReviewServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
-2025-01-09T18:52:20.713+0100 INFO               [main]                         be.pxl.services.ReviewServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-01-09T18:52:23.347+0100 INFO               [main]                         be.pxl.services.ReviewServiceApplication - Started ReviewServiceApplication in 3.314 seconds (process running for 3.724)
-2025-01-09T18:52:51.593+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T18:52:51.593+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T18:52:51.593+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T18:52:51.593+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T18:52:51.593+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T18:52:51.593+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T18:53:03.462+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 302
-2025-01-09T18:53:03.462+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.NotificationService - deleting notification in the service class
-2025-01-09T18:53:24.348+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to save as draft
-2025-01-09T18:53:24.348+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Saving post as draft to the database with title: testeretdetdfgqdfg
-2025-01-09T18:53:25.463+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T18:53:25.463+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T18:53:25.463+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T18:53:25.463+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T18:53:25.463+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T18:53:25.463+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T18:53:54.163+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to update post with id 1902
-2025-01-09T18:53:54.163+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Updating post with id: 1902
-2025-01-09T18:54:03.948+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to send draft with id 1902 for review
-2025-01-09T18:54:03.948+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Sending draft for review with id: 1902
-2025-01-09T18:54:03.990+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1902, postTitle=Test2, postContent=Test2]
-2025-01-09T18:54:06.996+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
-2025-01-09T18:54:06.996+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.ReviewService - Getting all submitted posts
-2025-01-09T18:54:08.336+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
-2025-01-09T18:54:08.336+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.services.ReviewService - Getting all submitted posts
-2025-01-09T18:54:08.338+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T18:54:08.338+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T18:54:26.888+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1902
-2025-01-09T18:54:26.888+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.services.ReviewService - Rejecting post with id 1902
-2025-01-09T18:54:26.942+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.NotificationController - Received request to send a notification
-2025-01-09T18:54:26.942+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.NotificationService - creating a notification in the service class
-2025-01-09T18:54:26.969+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1902
-2025-01-09T18:54:28.917+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T18:54:28.917+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T18:54:28.917+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T18:54:28.918+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T18:54:30.678+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T18:54:30.678+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T18:54:30.678+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T18:54:30.678+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T18:54:30.693+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T18:54:30.694+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T18:54:35.230+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 352
-2025-01-09T18:54:35.230+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.NotificationService - deleting notification in the service class
-2025-01-09T18:54:43.159+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to update post with id 1902
-2025-01-09T18:54:43.159+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Updating post with id: 1902
-2025-01-09T18:54:44.061+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to send draft with id 1902 for review
-2025-01-09T18:54:44.061+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Sending draft for review with id: 1902
-2025-01-09T18:54:44.075+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1902, postTitle=Test22, postContent=Test2]
-2025-01-09T18:54:45.110+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
-2025-01-09T18:54:45.110+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.services.ReviewService - Getting all submitted posts
-2025-01-09T18:54:46.859+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1902
-2025-01-09T18:54:46.860+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.services.ReviewService - Approving post with id 1902
-2025-01-09T18:54:46.885+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.NotificationController - Received request to send a notification
-2025-01-09T18:54:46.885+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.NotificationService - creating a notification in the service class
-2025-01-09T18:54:46.901+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1902
-2025-01-09T18:54:48.251+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T18:54:48.251+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T18:54:48.251+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T18:54:48.251+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T18:54:49.020+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T18:54:49.020+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T18:54:49.020+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T18:54:49.020+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T18:54:49.023+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T18:54:49.023+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T18:54:50.944+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 353
-2025-01-09T18:54:50.945+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.NotificationService - deleting notification in the service class
-2025-01-09T18:54:54.992+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T18:54:54.992+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T18:55:07.650+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T18:55:07.650+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T18:55:21.591+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to filter posts
-2025-01-09T18:55:21.591+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting filtered posts
-2025-01-09T18:55:27.272+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to filter posts
-2025-01-09T18:55:27.272+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting filtered posts
-2025-01-09T18:55:30.299+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to filter posts
-2025-01-09T18:55:30.299+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting filtered posts
-2025-01-09T18:55:34.824+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to filter posts
-2025-01-09T18:55:34.824+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting filtered posts
-2025-01-09T18:55:40.339+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to filter posts
-2025-01-09T18:55:40.339+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting filtered posts
-2025-01-09T18:55:41.568+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1902
-2025-01-09T18:55:41.568+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CommentService - Getting comments of post with id 1902
-2025-01-09T18:55:52.794+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.api.controller.CommentController - Received request to add comment to post with id 1902
-2025-01-09T18:55:52.794+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CommentService - Adding comment to post with id 1902
-2025-01-09T18:55:52.831+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1902
-2025-01-09T18:55:52.831+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CommentService - Getting comments of post with id 1902
-2025-01-09T18:55:55.369+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1902
-2025-01-09T18:55:55.369+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CommentService - Getting comments of post with id 1902
-2025-01-09T18:55:55.591+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1902
-2025-01-09T18:55:55.591+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.services.CommentService - Getting comments of post with id 1902
-2025-01-09T18:56:15.236+0100 INFO               [http-nio-8082-exec-8]         be.pxl.services.api.controller.CommentController - Received request to edit comment with id 452
-2025-01-09T18:56:15.237+0100 INFO               [http-nio-8082-exec-8]         be.pxl.services.services.CommentService - Editing comment with id 452
-2025-01-09T18:56:15.260+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1902
-2025-01-09T18:56:15.260+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.services.CommentService - Getting comments of post with id 1902
-2025-01-09T18:56:16.431+0100 INFO               [http-nio-8082-exec-10]        be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1902
-2025-01-09T18:56:16.431+0100 INFO               [http-nio-8082-exec-10]        be.pxl.services.services.CommentService - Getting comments of post with id 1902
-2025-01-09T18:56:16.735+0100 INFO               [http-nio-8082-exec-9]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1902
-2025-01-09T18:56:16.735+0100 INFO               [http-nio-8082-exec-9]         be.pxl.services.services.CommentService - Getting comments of post with id 1902
-2025-01-09T18:56:16.930+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1902
-2025-01-09T18:56:16.930+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CommentService - Getting comments of post with id 1902
-2025-01-09T18:56:17.145+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1902
-2025-01-09T18:56:17.145+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CommentService - Getting comments of post with id 1902
-2025-01-09T18:56:25.156+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T18:56:25.156+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T18:56:36.828+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T18:56:36.828+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:38:37.812+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T20:38:37.812+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T20:38:37.812+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:38:37.813+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T20:38:37.813+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T20:38:37.813+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:38:38.833+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:38:38.833+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:38:43.038+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:38:43.038+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:38:43.059+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:38:43.060+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:42:51.589+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:42:51.589+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:42:51.589+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:42:51.589+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:43:44.507+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:43:44.507+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:43:44.507+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:43:44.507+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:43:56.505+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:43:56.505+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:43:56.505+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:43:56.505+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:44:19.424+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:44:19.424+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:44:19.424+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:44:19.424+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:44:34.436+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:44:34.436+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:44:34.437+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:44:34.437+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:44:39.090+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:44:39.090+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:44:39.091+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:44:39.091+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:44:39.284+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:44:39.284+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:44:39.284+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:44:39.284+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:44:39.535+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:44:39.536+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:44:39.538+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:44:39.538+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:44:40.087+0100 INFO               [http-nio-8084-exec-7]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
-2025-01-09T20:44:40.087+0100 INFO               [http-nio-8084-exec-7]         be.pxl.services.services.ReviewService - Getting all submitted posts
-2025-01-09T20:44:45.604+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1809
-2025-01-09T20:44:45.604+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.services.ReviewService - Rejecting post with id 1809
-2025-01-09T20:44:45.627+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.NotificationController - Received request to send a notification
-2025-01-09T20:44:45.627+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.NotificationService - creating a notification in the service class
-2025-01-09T20:44:45.652+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1809
-2025-01-09T20:44:46.498+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T20:44:46.498+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T20:44:46.498+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T20:44:46.499+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T20:44:49.398+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T20:44:49.398+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T20:44:49.398+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T20:44:49.398+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T20:44:49.404+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:44:49.405+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:44:49.784+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T20:44:49.784+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T20:44:49.784+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T20:44:49.784+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:44:49.784+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T20:44:49.784+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:44:50.299+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T20:44:50.299+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T20:44:50.299+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T20:44:50.299+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:44:50.300+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T20:44:50.300+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:44:56.139+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T20:44:56.139+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:44:56.139+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T20:44:56.140+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T20:44:56.140+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:44:56.140+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T20:44:58.374+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 354
-2025-01-09T20:44:58.374+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.NotificationService - deleting notification in the service class
-2025-01-09T20:44:59.223+0100 INFO               [http-nio-8084-exec-9]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
-2025-01-09T20:44:59.224+0100 INFO               [http-nio-8084-exec-9]         be.pxl.services.services.ReviewService - Getting all submitted posts
-2025-01-09T20:45:02.889+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1807
-2025-01-09T20:45:02.889+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.services.ReviewService - Rejecting post with id 1807
-2025-01-09T20:45:02.908+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.NotificationController - Received request to send a notification
-2025-01-09T20:45:02.908+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.NotificationService - creating a notification in the service class
-2025-01-09T20:45:02.918+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1807
-2025-01-09T20:45:03.826+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T20:45:03.826+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T20:45:03.826+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T20:45:03.826+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T20:45:05.716+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:45:05.716+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T20:45:05.716+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T20:45:05.716+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T20:45:05.716+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:45:05.716+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T20:45:06.077+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T20:45:06.077+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:45:06.077+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T20:45:06.077+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T20:45:06.077+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:45:06.077+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T20:45:06.277+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:45:06.277+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:45:06.278+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T20:45:06.278+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T20:45:06.278+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T20:45:06.278+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T20:45:14.839+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 355
-2025-01-09T20:45:14.839+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.NotificationService - deleting notification in the service class
-2025-01-09T20:46:20.494+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:46:20.495+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T20:46:20.495+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T20:46:20.495+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:46:20.495+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T20:46:20.495+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T20:47:34.155+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T20:47:34.155+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T20:47:34.155+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T20:47:34.155+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:47:34.155+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T20:47:34.155+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:47:49.484+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
-2025-01-09T20:47:49.484+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.services.ReviewService - Getting all submitted posts
-2025-01-09T20:47:52.515+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1803
-2025-01-09T20:47:52.515+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.services.ReviewService - Rejecting post with id 1803
-2025-01-09T20:47:52.527+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.NotificationController - Received request to send a notification
-2025-01-09T20:47:52.527+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.NotificationService - creating a notification in the service class
-2025-01-09T20:47:52.537+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1803
-2025-01-09T20:47:53.204+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T20:47:53.204+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T20:47:53.204+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T20:47:53.204+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T20:47:53.914+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T20:47:53.914+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T20:47:53.914+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T20:47:53.914+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T20:47:53.916+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:47:53.916+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:47:56.920+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 356
-2025-01-09T20:47:56.920+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.NotificationService - deleting notification in the service class
-2025-01-09T20:49:17.892+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to send draft with id 1554 for review
-2025-01-09T20:49:17.893+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Sending draft for review with id: 1554
-2025-01-09T20:49:17.905+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1554, postTitle=Draft twweeenenegenetitg, postContent=genk fozrza zicigng]
-2025-01-09T20:49:18.512+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
-2025-01-09T20:49:18.512+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.services.ReviewService - Getting all submitted posts
-2025-01-09T20:49:19.839+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
-2025-01-09T20:49:19.840+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.services.ReviewService - Getting all submitted posts
-2025-01-09T20:49:19.853+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:49:19.853+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:49:21.344+0100 INFO               [http-nio-8084-exec-7]         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1554
-2025-01-09T20:49:21.344+0100 INFO               [http-nio-8084-exec-7]         be.pxl.services.services.ReviewService - Approving post with id 1554
-2025-01-09T20:49:21.356+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.NotificationController - Received request to send a notification
-2025-01-09T20:49:21.356+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.NotificationService - creating a notification in the service class
-2025-01-09T20:49:21.366+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1554
-2025-01-09T20:49:22.116+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:49:22.116+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:49:23.633+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:49:23.633+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:49:23.634+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:49:23.634+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:49:25.027+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 357
-2025-01-09T20:49:25.027+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.NotificationService - deleting notification in the service class
-2025-01-09T20:49:34.508+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:49:34.508+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:49:34.508+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:49:34.508+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:49:35.588+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
-2025-01-09T20:49:35.589+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
-2025-01-09T20:49:35.589+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
-2025-01-09T20:49:35.589+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
-2025-01-09T20:50:08.209+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
-2025-01-09T20:50:08.209+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.services.ReviewService - Getting all submitted posts
-2025-01-09T20:54:40.113+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:54:40.113+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:54:40.118+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
-2025-01-09T20:54:40.118+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.services.ReviewService - Getting all submitted posts
-2025-01-09T20:54:40.603+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:54:40.603+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:54:41.553+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:54:41.554+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:54:41.555+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:54:41.555+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:54:41.748+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:54:41.748+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:54:41.748+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:54:41.748+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:54:41.980+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:54:41.980+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:54:41.983+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:54:41.983+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:54:58.462+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:54:58.462+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:54:58.462+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:54:58.462+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:55:02.232+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:55:02.232+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:55:02.233+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:55:02.233+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:55:18.318+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:55:18.318+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:55:18.319+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:55:18.319+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:55:18.659+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:55:18.659+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:55:18.659+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:55:18.659+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:56:54.494+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:56:54.494+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:56:54.494+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:56:54.494+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:57:05.041+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:57:05.041+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting all posts
-2025-01-09T20:57:05.041+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:57:05.041+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:57:07.708+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1402
-2025-01-09T20:57:07.708+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CommentService - Getting comments of post with id 1402
-2025-01-09T20:57:11.006+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1402
-2025-01-09T20:57:11.006+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CommentService - Getting comments of post with id 1402
-2025-01-09T20:57:11.008+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:57:11.008+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:57:11.413+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
-2025-01-09T20:57:11.413+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2025-01-09T20:57:11.414+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1402
-2025-01-09T20:57:11.415+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.services.CommentService - Getting comments of post with id 1402
-2025-01-09T20:57:15.130+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get all posts
-2025-01-09T20:57:15.130+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:44:17.998+0100 INFO               [main]                         be.pxl.services.CommentServiceApplication - Starting CommentServiceApplication using Java 17.0.11 with PID 22344 (C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\comment-service\target\classes started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog)
+2025-01-10T13:44:18.001+0100 DEBUG              [main]                         be.pxl.services.CommentServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-10T13:44:18.001+0100 INFO               [main]                         be.pxl.services.CommentServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-10T13:44:20.745+0100 INFO               [main]                         be.pxl.services.CommentServiceApplication - Started CommentServiceApplication in 3.334 seconds (process running for 3.685)
+2025-01-10T13:44:20.747+0100 INFO               [main]                         be.pxl.services.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-10T13:44:22.319+0100 INFO               [main]                         be.pxl.services.ReviewServiceApplication - Starting ReviewServiceApplication using Java 17.0.11 with PID 19844 (C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\review-service\target\classes started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog)
+2025-01-10T13:44:22.320+0100 DEBUG              [main]                         be.pxl.services.ReviewServiceApplication - Running with Spring Boot v3.3.5, Spring v6.1.14
+2025-01-10T13:44:22.320+0100 INFO               [main]                         be.pxl.services.ReviewServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-10T13:44:23.613+0100 INFO               [main]                         be.pxl.services.PostServiceApplication - Started PostServiceApplication in 3.587 seconds (process running for 3.944)
+2025-01-10T13:44:24.858+0100 INFO               [main]                         be.pxl.services.ReviewServiceApplication - Started ReviewServiceApplication in 3.067 seconds (process running for 3.413)
+2025-01-10T13:44:54.405+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T13:44:54.405+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T13:44:54.406+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T13:44:54.406+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T13:44:56.711+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:44:56.711+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:44:57.133+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T13:44:57.133+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T13:44:57.134+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T13:44:57.134+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T13:44:57.983+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2025-01-10T13:44:57.983+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.ReviewService - Getting all submitted posts
+2025-01-10T13:44:59.310+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:44:59.310+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:45:05.268+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T13:45:05.268+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T13:45:05.268+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T13:45:05.268+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T13:45:17.103+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to save as draft
+2025-01-10T13:45:17.103+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Saving post as draft to the database with title: Testje voor examen
+2025-01-10T13:45:17.199+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T13:45:17.199+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T13:45:17.199+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T13:45:17.199+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T13:45:17.202+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T13:45:17.202+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T13:45:38.557+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to update post with id 1952
+2025-01-10T13:45:38.557+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Updating post with id: 1952
+2025-01-10T13:45:39.890+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to send draft with id 1952 for review
+2025-01-10T13:45:39.890+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Sending draft for review with id: 1952
+2025-01-10T13:45:39.914+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1952, postTitle=Testje voor examen met edit, postContent=Testje voor examenTestje voor examenTestje voor examenTestje voor examenTestje voor examen edit edit edit]
+2025-01-10T13:45:44.274+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2025-01-10T13:45:44.274+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.services.ReviewService - Getting all submitted posts
+2025-01-10T13:46:09.240+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 1952
+2025-01-10T13:46:09.240+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.services.ReviewService - Rejecting post with id 1952
+2025-01-10T13:46:09.302+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.NotificationController - Received request to send a notification
+2025-01-10T13:46:09.302+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.NotificationService - creating a notification in the service class
+2025-01-10T13:46:09.329+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1952
+2025-01-10T13:46:11.649+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T13:46:11.649+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T13:46:11.668+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2025-01-10T13:46:11.668+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.services.ReviewService - Getting all submitted posts
+2025-01-10T13:46:18.379+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 402
+2025-01-10T13:46:18.379+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.NotificationService - deleting notification in the service class
+2025-01-10T13:46:18.937+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T13:46:18.937+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T13:46:18.938+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T13:46:18.938+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T13:46:44.809+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to update post with id 1952
+2025-01-10T13:46:44.809+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Updating post with id: 1952
+2025-01-10T13:46:47.478+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to send draft with id 1952 for review
+2025-01-10T13:46:47.478+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Sending draft for review with id: 1952
+2025-01-10T13:46:47.492+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=1952, postTitle=Testje voor examen met edit, postContent=Testje voor examenTestje voor examenTestje voor examenTestje voor examenTestje voor examen edit edit edit fgdfsfdgfdgsfdgfdgs]
+2025-01-10T13:46:48.513+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2025-01-10T13:46:48.513+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.services.ReviewService - Getting all submitted posts
+2025-01-10T13:46:51.543+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 1952
+2025-01-10T13:46:51.543+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.services.ReviewService - Approving post with id 1952
+2025-01-10T13:46:51.569+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.NotificationController - Received request to send a notification
+2025-01-10T13:46:51.569+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.NotificationService - creating a notification in the service class
+2025-01-10T13:46:51.579+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 1952
+2025-01-10T13:46:52.614+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:46:52.614+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:46:55.245+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T13:46:55.245+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T13:46:55.246+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:46:55.246+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:47:00.685+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 403
+2025-01-10T13:47:00.685+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.NotificationService - deleting notification in the service class
+2025-01-10T13:47:03.474+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:47:03.474+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T13:47:03.474+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:47:03.474+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T13:47:03.871+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T13:47:03.871+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T13:47:03.888+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:47:03.888+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:47:04.249+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T13:47:04.249+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T13:47:04.262+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:47:04.262+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:47:12.002+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:47:12.002+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T13:47:12.002+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:47:12.002+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T13:47:12.332+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:47:12.332+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T13:47:12.332+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:47:12.333+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T13:47:12.570+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:47:12.570+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T13:47:12.570+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:47:12.570+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T13:47:12.790+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:47:12.790+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T13:47:12.790+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:47:12.790+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T13:47:51.977+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2025-01-10T13:47:51.977+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.services.ReviewService - Getting all submitted posts
+2025-01-10T13:48:00.136+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:48:00.136+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:48:00.473+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T13:48:00.473+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T13:48:00.473+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T13:48:00.473+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T13:48:03.974+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:48:03.974+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:48:15.984+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:48:15.984+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:48:19.533+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1952
+2025-01-10T13:48:19.533+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CommentService - Getting comments of post with id 1952
+2025-01-10T13:48:25.027+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:48:25.027+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:48:29.031+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to filter posts
+2025-01-10T13:48:29.031+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting filtered posts
+2025-01-10T13:48:36.556+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to filter posts
+2025-01-10T13:48:36.556+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting filtered posts
+2025-01-10T13:48:45.135+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to filter posts
+2025-01-10T13:48:45.136+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting filtered posts
+2025-01-10T13:48:48.858+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to filter posts
+2025-01-10T13:48:48.858+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting filtered posts
+2025-01-10T13:48:52.221+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1952
+2025-01-10T13:48:52.221+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CommentService - Getting comments of post with id 1952
+2025-01-10T13:50:08.889+0100 INFO               [main]                         be.pxl.services.PostServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-10T13:50:11.454+0100 INFO               [main]                         be.pxl.services.PostServiceApplication - Started PostServiceApplication in 3.228 seconds (process running for 3.564)
+2025-01-10T13:50:34.477+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:50:34.477+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:50:39.039+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1952
+2025-01-10T13:50:39.039+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CommentService - Getting comments of post with id 1952
+2025-01-10T13:51:04.627+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.api.controller.CommentController - Received request to add comment to post with id 1952
+2025-01-10T13:51:04.627+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CommentService - Adding comment to post with id 1952
+2025-01-10T13:51:04.671+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1952
+2025-01-10T13:51:04.672+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.services.CommentService - Getting comments of post with id 1952
+2025-01-10T13:51:08.849+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.api.controller.CommentController - Received request to edit comment with id 502
+2025-01-10T13:51:08.849+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.services.CommentService - Editing comment with id 502
+2025-01-10T13:51:08.875+0100 INFO               [http-nio-8082-exec-8]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1952
+2025-01-10T13:51:08.875+0100 INFO               [http-nio-8082-exec-8]         be.pxl.services.services.CommentService - Getting comments of post with id 1952
+2025-01-10T13:51:10.104+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Lebron
+2025-01-10T13:51:10.104+0100 WARN               [http-nio-8081-exec-2]         be.pxl.services.api.controller.NotificationController - Forbidden: User with role user attempted to get notifications for redactor Lebron
+2025-01-10T13:51:10.112+0100 INFO               [http-nio-8082-exec-9]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1952
+2025-01-10T13:51:10.113+0100 INFO               [http-nio-8082-exec-9]         be.pxl.services.services.CommentService - Getting comments of post with id 1952
+2025-01-10T13:51:10.296+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Lebron
+2025-01-10T13:51:10.296+0100 WARN               [http-nio-8081-exec-3]         be.pxl.services.api.controller.NotificationController - Forbidden: User with role user attempted to get notifications for redactor Lebron
+2025-01-10T13:51:10.299+0100 INFO               [http-nio-8082-exec-10]        be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1952
+2025-01-10T13:51:10.300+0100 INFO               [http-nio-8082-exec-10]        be.pxl.services.services.CommentService - Getting comments of post with id 1952
+2025-01-10T13:51:10.457+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Lebron
+2025-01-10T13:51:10.458+0100 WARN               [http-nio-8081-exec-4]         be.pxl.services.api.controller.NotificationController - Forbidden: User with role user attempted to get notifications for redactor Lebron
+2025-01-10T13:51:10.464+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1952
+2025-01-10T13:51:10.464+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CommentService - Getting comments of post with id 1952
+2025-01-10T13:51:10.577+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Lebron
+2025-01-10T13:51:10.577+0100 WARN               [http-nio-8081-exec-5]         be.pxl.services.api.controller.NotificationController - Forbidden: User with role user attempted to get notifications for redactor Lebron
+2025-01-10T13:51:10.578+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1952
+2025-01-10T13:51:10.578+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CommentService - Getting comments of post with id 1952
+2025-01-10T13:52:47.196+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:52:47.196+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:52:49.310+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:52:49.310+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:52:49.734+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:52:49.735+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:52:51.772+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:52:51.772+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:52:55.510+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1403
+2025-01-10T13:52:55.510+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CommentService - Getting comments of post with id 1403
+2025-01-10T13:52:56.675+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1403
+2025-01-10T13:52:56.675+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CommentService - Getting comments of post with id 1403
+2025-01-10T13:52:57.159+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1403
+2025-01-10T13:52:57.159+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.services.CommentService - Getting comments of post with id 1403
+2025-01-10T13:52:57.353+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1403
+2025-01-10T13:52:57.353+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.services.CommentService - Getting comments of post with id 1403
+2025-01-10T13:52:57.569+0100 INFO               [http-nio-8082-exec-8]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1403
+2025-01-10T13:52:57.569+0100 INFO               [http-nio-8082-exec-8]         be.pxl.services.services.CommentService - Getting comments of post with id 1403
+2025-01-10T13:52:57.636+0100 INFO               [http-nio-8082-exec-9]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1403
+2025-01-10T13:52:57.636+0100 INFO               [http-nio-8082-exec-9]         be.pxl.services.services.CommentService - Getting comments of post with id 1403
+2025-01-10T13:53:03.925+0100 INFO               [http-nio-8082-exec-10]        be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1403
+2025-01-10T13:53:03.925+0100 INFO               [http-nio-8082-exec-10]        be.pxl.services.services.CommentService - Getting comments of post with id 1403
+2025-01-10T13:53:04.395+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1403
+2025-01-10T13:53:04.395+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CommentService - Getting comments of post with id 1403
+2025-01-10T13:53:05.039+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1403
+2025-01-10T13:53:05.039+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CommentService - Getting comments of post with id 1403
+2025-01-10T13:53:14.625+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:53:14.625+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:53:16.521+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1403
+2025-01-10T13:53:16.522+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CommentService - Getting comments of post with id 1403
+2025-01-10T13:53:17.584+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1403
+2025-01-10T13:53:17.584+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CommentService - Getting comments of post with id 1403
+2025-01-10T13:53:18.081+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1403
+2025-01-10T13:53:18.082+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CommentService - Getting comments of post with id 1403
+2025-01-10T13:53:18.816+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:53:18.816+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:53:24.512+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1952
+2025-01-10T13:53:24.512+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.services.CommentService - Getting comments of post with id 1952
+2025-01-10T13:53:29.743+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.api.controller.CommentController - Received request to edit comment with id 502
+2025-01-10T13:53:29.743+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.services.CommentService - Editing comment with id 502
+2025-01-10T13:53:29.760+0100 INFO               [http-nio-8082-exec-8]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1952
+2025-01-10T13:53:29.760+0100 INFO               [http-nio-8082-exec-8]         be.pxl.services.services.CommentService - Getting comments of post with id 1952
+2025-01-10T13:53:40.267+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:53:40.267+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:53:44.979+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to filter posts
+2025-01-10T13:53:44.979+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting filtered posts
+2025-01-10T13:53:46.561+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to filter posts
+2025-01-10T13:53:46.561+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting filtered posts
+2025-01-10T13:55:36.676+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:55:36.676+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:55:37.196+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:55:37.196+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:55:37.390+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:55:37.391+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:55:37.544+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:55:37.544+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:55:51.766+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T13:55:51.766+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T13:55:51.770+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T13:55:51.770+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T13:55:51.771+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T13:55:51.771+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T13:55:52.955+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2025-01-10T13:55:52.955+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.services.ReviewService - Getting all submitted posts
+2025-01-10T13:55:54.037+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T13:55:54.037+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T13:55:54.037+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T13:55:54.037+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T13:55:54.487+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T13:55:54.487+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T13:55:54.936+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T13:55:54.936+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T13:55:54.937+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T13:55:54.938+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T13:55:55.295+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2025-01-10T13:55:55.295+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.ReviewService - Getting all submitted posts
+2025-01-10T13:55:55.780+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T13:55:55.780+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T13:55:55.780+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T13:55:55.780+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T14:01:26.329+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to add post
+2025-01-10T14:01:26.329+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Adding post to the database with title: The Rise of Electric Cars
+2025-01-10T14:01:26.374+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=2002, postTitle=The Rise of Electric Cars, postContent=Electric vehicles (EVs) are transforming the way we think about transportation. With major automakers rolling out new EV models and governments incentivizing eco-friendly alternatives, the shift to a greener future is accelerating. Could 2030 mark the end of gasoline cars?]
+2025-01-10T14:01:36.206+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to add post
+2025-01-10T14:01:36.206+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Adding post to the database with title: 5 Tips for a Productive Morning Routine
+2025-01-10T14:01:36.216+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=2003, postTitle=5 Tips for a Productive Morning Routine, postContent=Starting your day off right can set the tone for productivity. Try these tips: wake up early, meditate for 10 minutes, write a to-do list, exercise briefly, and enjoy a healthy breakfast. What’s your secret to a great morning?]
+2025-01-10T14:01:42.569+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to add post
+2025-01-10T14:01:42.569+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Adding post to the database with title: The Best Coffee Shops in Amsterdam
+2025-01-10T14:01:42.578+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=2004, postTitle=The Best Coffee Shops in Amsterdam, postContent=Amsterdam is known for its vibrant coffee culture. From cozy spots like "Café de Prins" to trendy spaces like "Scandi Kitchen," there’s a café for every taste. Which coffee shop is your favorite in the city?]
+2025-01-10T14:01:48.880+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to add post
+2025-01-10T14:01:48.880+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Adding post to the database with title: How AI Is Shaping the Future of Work
+2025-01-10T14:01:48.891+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=2005, postTitle=How AI Is Shaping the Future of Work, postContent=Artificial Intelligence is changing industries from healthcare to finance. While it creates new opportunities, it also raises concerns about job displacement. Is AI a friend or foe in the workplace?]
+2025-01-10T14:02:07.398+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to add post
+2025-01-10T14:02:07.398+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Adding post to the database with title: Simple Recipes for Busy Weeknights
+2025-01-10T14:02:07.409+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=2006, postTitle=Simple Recipes for Busy Weeknights, postContent=Don’t let a busy schedule stop you from enjoying a home-cooked meal! Quick recipes like spaghetti aglio e olio, stir-fried veggies with tofu, or chicken wraps can be prepared in under 20 minutes. What’s your go-to quick meal?]
+2025-01-10T14:02:08.155+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2025-01-10T14:02:08.155+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.services.ReviewService - Getting all submitted posts
+2025-01-10T14:02:10.269+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 2006
+2025-01-10T14:02:10.270+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.services.ReviewService - Approving post with id 2006
+2025-01-10T14:02:10.285+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.NotificationController - Received request to send a notification
+2025-01-10T14:02:10.285+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.NotificationService - creating a notification in the service class
+2025-01-10T14:02:10.317+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 2006
+2025-01-10T14:02:10.731+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 2005
+2025-01-10T14:02:10.732+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.services.ReviewService - Approving post with id 2005
+2025-01-10T14:02:10.756+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.NotificationController - Received request to send a notification
+2025-01-10T14:02:10.756+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.NotificationService - creating a notification in the service class
+2025-01-10T14:02:10.770+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 2005
+2025-01-10T14:02:11.424+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 2002
+2025-01-10T14:02:11.424+0100 INFO               [http-nio-8084-exec-6]         be.pxl.services.services.ReviewService - Approving post with id 2002
+2025-01-10T14:02:11.441+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.NotificationController - Received request to send a notification
+2025-01-10T14:02:11.441+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.NotificationService - creating a notification in the service class
+2025-01-10T14:02:11.452+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 2002
+2025-01-10T14:02:11.971+0100 INFO               [http-nio-8084-exec-7]         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 2004
+2025-01-10T14:02:11.971+0100 INFO               [http-nio-8084-exec-7]         be.pxl.services.services.ReviewService - Approving post with id 2004
+2025-01-10T14:02:11.988+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.NotificationController - Received request to send a notification
+2025-01-10T14:02:11.989+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.NotificationService - creating a notification in the service class
+2025-01-10T14:02:12.002+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 2004
+2025-01-10T14:02:12.333+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 2003
+2025-01-10T14:02:12.333+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.services.ReviewService - Approving post with id 2003
+2025-01-10T14:02:12.350+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.NotificationController - Received request to send a notification
+2025-01-10T14:02:12.350+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.NotificationService - creating a notification in the service class
+2025-01-10T14:02:12.362+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 2003
+2025-01-10T14:02:13.052+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:02:13.052+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:02:19.258+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T14:02:19.258+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T14:02:19.258+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T14:02:19.258+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T14:02:21.688+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:02:21.688+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:02:22.219+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T14:02:22.219+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T14:02:22.220+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T14:02:22.220+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T14:02:42.913+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to save as draft
+2025-01-10T14:02:42.913+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Saving post as draft to the database with title: How to Stay Fit at Home
+2025-01-10T14:02:44.073+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T14:02:44.073+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T14:02:44.073+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:02:44.073+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T14:02:44.075+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T14:02:44.075+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T14:02:46.307+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 456
+2025-01-10T14:02:46.307+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.NotificationService - deleting notification in the service class
+2025-01-10T14:02:46.788+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 455
+2025-01-10T14:02:46.788+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.NotificationService - deleting notification in the service class
+2025-01-10T14:02:47.298+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 454
+2025-01-10T14:02:47.299+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.NotificationService - deleting notification in the service class
+2025-01-10T14:02:47.763+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 453
+2025-01-10T14:02:47.763+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.NotificationService - deleting notification in the service class
+2025-01-10T14:02:48.183+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 452
+2025-01-10T14:02:48.183+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.NotificationService - deleting notification in the service class
+2025-01-10T14:03:00.823+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to update post with id 2007
+2025-01-10T14:03:00.823+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Updating post with id: 2007
+2025-01-10T14:03:02.496+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T14:03:02.496+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:03:02.511+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T14:03:02.511+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T14:03:02.511+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T14:03:02.511+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T14:03:15.141+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to update post with id 2007
+2025-01-10T14:03:15.141+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Updating post with id: 2007
+2025-01-10T14:03:16.639+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T14:03:16.639+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T14:03:16.639+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T14:03:16.639+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T14:03:16.639+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:03:16.639+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T14:03:16.830+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T14:03:16.830+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:03:16.831+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T14:03:16.831+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T14:03:16.831+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T14:03:16.831+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T14:03:21.196+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to send draft with id 2007 for review
+2025-01-10T14:03:21.196+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Sending draft for review with id: 2007
+2025-01-10T14:03:21.211+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=2007, postTitle=How to Stay Fit at the gym, postContent=Home workouts are a great alternative to the gym. Try bodyweight exercises like push-ups, squats, and planks, or follow free YouTube fitness classes. Staying fit has never been more important!]
+2025-01-10T14:03:22.202+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2025-01-10T14:03:22.202+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.services.ReviewService - Getting all submitted posts
+2025-01-10T14:03:23.365+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2025-01-10T14:03:23.365+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.ReviewService - Getting all submitted posts
+2025-01-10T14:03:23.368+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T14:03:23.368+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:03:23.564+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T14:03:23.565+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:03:23.568+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2025-01-10T14:03:23.568+0100 INFO               [http-nio-8084-exec-2]         be.pxl.services.services.ReviewService - Getting all submitted posts
+2025-01-10T14:03:34.926+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.api.controller.ReviewController - Received request to reject post with id 2007
+2025-01-10T14:03:34.926+0100 INFO               [http-nio-8084-exec-3]         be.pxl.services.services.ReviewService - Rejecting post with id 2007
+2025-01-10T14:03:34.936+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.NotificationController - Received request to send a notification
+2025-01-10T14:03:34.936+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.NotificationService - creating a notification in the service class
+2025-01-10T14:03:34.946+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 2007
+2025-01-10T14:03:36.639+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T14:03:36.639+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T14:03:36.639+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T14:03:36.639+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T14:03:39.336+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T14:03:39.336+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T14:03:39.336+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T14:03:39.336+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T14:03:39.338+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T14:03:39.338+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:03:47.273+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 457
+2025-01-10T14:03:47.273+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.NotificationService - deleting notification in the service class
+2025-01-10T14:03:49.496+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T14:03:49.496+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:03:49.499+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T14:03:49.499+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T14:03:49.499+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T14:03:49.499+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T14:04:07.761+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to update post with id 2007
+2025-01-10T14:04:07.761+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Updating post with id: 2007
+2025-01-10T14:04:09.211+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T14:04:09.211+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:04:09.216+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T14:04:09.216+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T14:04:09.216+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T14:04:09.216+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T14:04:09.385+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T14:04:09.385+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:04:09.387+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: Johny
+2025-01-10T14:04:09.387+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: Johny
+2025-01-10T14:04:09.387+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting drafts by redactor: Johny
+2025-01-10T14:04:09.387+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: Johny
+2025-01-10T14:04:11.391+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to send draft with id 2007 for review
+2025-01-10T14:04:11.391+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Sending draft for review with id: 2007
+2025-01-10T14:04:11.402+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=2007, postTitle=How to Stay Fit at the gym, postContent=Home workouts are a great alternative to the gym. Try bodyweight exercises like push-ups, squats, and planks, or follow free YouTube fitness classes. Staying fit has never been more important! Work out more.]
+2025-01-10T14:04:12.525+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2025-01-10T14:04:12.525+0100 INFO               [http-nio-8084-exec-4]         be.pxl.services.services.ReviewService - Getting all submitted posts
+2025-01-10T14:04:13.609+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 2007
+2025-01-10T14:04:13.609+0100 INFO               [http-nio-8084-exec-5]         be.pxl.services.services.ReviewService - Approving post with id 2007
+2025-01-10T14:04:13.620+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.NotificationController - Received request to send a notification
+2025-01-10T14:04:13.620+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.NotificationService - creating a notification in the service class
+2025-01-10T14:04:13.630+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 2007
+2025-01-10T14:04:14.463+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:04:14.463+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:04:15.438+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:04:15.438+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:04:15.441+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T14:04:15.441+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:04:15.634+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: Johny
+2025-01-10T14:04:15.634+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:04:15.635+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:04:15.636+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:04:16.744+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 458
+2025-01-10T14:04:16.744+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.NotificationService - deleting notification in the service class
+2025-01-10T14:05:24.316+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to filter posts
+2025-01-10T14:05:24.316+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting filtered posts
+2025-01-10T14:05:29.929+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to filter posts
+2025-01-10T14:05:29.929+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting filtered posts
+2025-01-10T14:05:46.380+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:05:46.380+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:05:50.148+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to filter posts
+2025-01-10T14:05:50.148+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting filtered posts
+2025-01-10T14:05:50.963+0100 INFO               [http-nio-8082-exec-10]        be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 2007
+2025-01-10T14:05:50.963+0100 INFO               [http-nio-8082-exec-10]        be.pxl.services.services.CommentService - Getting comments of post with id 2007
+2025-01-10T14:06:07.278+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.api.controller.CommentController - Received request to add comment to post with id 2007
+2025-01-10T14:06:07.278+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CommentService - Adding comment to post with id 2007
+2025-01-10T14:06:07.291+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 2007
+2025-01-10T14:06:07.291+0100 INFO               [http-nio-8082-exec-2]         be.pxl.services.services.CommentService - Getting comments of post with id 2007
+2025-01-10T14:06:08.842+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 2007
+2025-01-10T14:06:08.842+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CommentService - Getting comments of post with id 2007
+2025-01-10T14:06:20.796+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.api.controller.CommentController - Received request to edit comment with id 503
+2025-01-10T14:06:20.796+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CommentService - Editing comment with id 503
+2025-01-10T14:06:20.812+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 2007
+2025-01-10T14:06:20.812+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CommentService - Getting comments of post with id 2007
+2025-01-10T14:06:22.444+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 2007
+2025-01-10T14:06:22.444+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.services.CommentService - Getting comments of post with id 2007
+2025-01-10T14:06:22.632+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 2007
+2025-01-10T14:06:22.632+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.services.CommentService - Getting comments of post with id 2007
+2025-01-10T14:06:22.765+0100 INFO               [http-nio-8082-exec-8]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 2007
+2025-01-10T14:06:22.765+0100 INFO               [http-nio-8082-exec-8]         be.pxl.services.services.CommentService - Getting comments of post with id 2007
+2025-01-10T14:06:22.909+0100 INFO               [http-nio-8082-exec-9]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 2007
+2025-01-10T14:06:22.909+0100 INFO               [http-nio-8082-exec-9]         be.pxl.services.services.CommentService - Getting comments of post with id 2007
+2025-01-10T14:06:23.053+0100 INFO               [http-nio-8082-exec-10]        be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 2007
+2025-01-10T14:06:23.053+0100 INFO               [http-nio-8082-exec-10]        be.pxl.services.services.CommentService - Getting comments of post with id 2007
+2025-01-10T14:06:23.741+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:06:23.742+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:06:25.556+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 2007
+2025-01-10T14:06:25.556+0100 INFO               [http-nio-8082-exec-1]         be.pxl.services.services.CommentService - Getting comments of post with id 2007
+2025-01-10T14:06:30.937+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:06:30.937+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:16:32.554+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: johny
+2025-01-10T14:16:32.554+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: johny
+2025-01-10T14:16:32.554+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting drafts by redactor: johny
+2025-01-10T14:16:32.554+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: johny
+2025-01-10T14:16:33.715+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:16:33.715+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:16:35.947+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:16:35.948+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:16:40.790+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:16:40.790+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:16:41.580+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:16:41.580+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:16:41.596+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: johny
+2025-01-10T14:16:41.596+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:16:42.089+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: johny
+2025-01-10T14:16:42.089+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:16:42.090+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:16:42.090+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:17:05.780+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:17:05.780+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:17:06.516+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: johny
+2025-01-10T14:17:06.516+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting drafts by redactor: johny
+2025-01-10T14:17:06.516+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: johny
+2025-01-10T14:17:06.516+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting posts that need changing by redactor: johny
+2025-01-10T14:17:07.683+0100 INFO               [http-nio-8084-exec-7]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2025-01-10T14:17:07.683+0100 INFO               [http-nio-8084-exec-7]         be.pxl.services.services.ReviewService - Getting all submitted posts
+2025-01-10T14:17:08.089+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:17:08.089+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:17:08.522+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: johny
+2025-01-10T14:17:08.522+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: johny
+2025-01-10T14:17:08.522+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: johny
+2025-01-10T14:17:08.522+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting drafts by redactor: johny
+2025-01-10T14:17:09.520+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:17:09.520+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:17:12.807+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 2007
+2025-01-10T14:17:12.807+0100 INFO               [http-nio-8082-exec-3]         be.pxl.services.services.CommentService - Getting comments of post with id 2007
+2025-01-10T14:17:14.098+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 2007
+2025-01-10T14:17:14.098+0100 INFO               [http-nio-8082-exec-4]         be.pxl.services.services.CommentService - Getting comments of post with id 2007
+2025-01-10T14:17:14.114+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: johny
+2025-01-10T14:17:14.114+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:17:14.538+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: johny
+2025-01-10T14:17:14.538+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:17:14.538+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 2007
+2025-01-10T14:17:14.538+0100 INFO               [http-nio-8082-exec-5]         be.pxl.services.services.CommentService - Getting comments of post with id 2007
+2025-01-10T14:17:14.676+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: johny
+2025-01-10T14:17:14.676+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:17:14.679+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 2007
+2025-01-10T14:17:14.679+0100 INFO               [http-nio-8082-exec-6]         be.pxl.services.services.CommentService - Getting comments of post with id 2007
+2025-01-10T14:17:15.566+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:17:15.566+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:17:16.491+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 2006
+2025-01-10T14:17:16.491+0100 INFO               [http-nio-8082-exec-7]         be.pxl.services.services.CommentService - Getting comments of post with id 2006
+2025-01-10T14:17:17.775+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:17:17.775+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:17:24.157+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: johny
+2025-01-10T14:17:24.157+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: johny
+2025-01-10T14:17:24.157+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting posts that need changing by redactor: johny
+2025-01-10T14:17:24.157+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting drafts by redactor: johny
+2025-01-10T14:17:29.585+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to save as draft
+2025-01-10T14:17:29.585+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Saving post as draft to the database with title: The Magic of Minimalism
+2025-01-10T14:17:30.672+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: johny
+2025-01-10T14:17:30.673+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting drafts by redactor: johny
+2025-01-10T14:17:30.673+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: johny
+2025-01-10T14:17:30.673+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:17:30.675+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: johny
+2025-01-10T14:17:30.676+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: johny
+2025-01-10T14:17:31.628+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to send draft with id 2008 for review
+2025-01-10T14:17:31.628+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Sending draft for review with id: 2008
+2025-01-10T14:17:31.638+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4] be.pxl.services.services.ReviewService - Processing review request: ReviewRequest[postId=2008, postTitle=The Magic of Minimalism, postContent=Minimalism is about simplifying your life by keeping only the essentials. It’s not just about decluttering your home but also focusing on what truly matters. Could minimalism be the key to happiness?]
+2025-01-10T14:17:32.475+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2025-01-10T14:17:32.475+0100 INFO               [http-nio-8084-exec-8]         be.pxl.services.services.ReviewService - Getting all submitted posts
+2025-01-10T14:17:33.303+0100 INFO               [http-nio-8084-exec-9]         be.pxl.services.api.controller.ReviewController - Received request to approve post with id 2008
+2025-01-10T14:17:33.303+0100 INFO               [http-nio-8084-exec-9]         be.pxl.services.services.ReviewService - Approving post with id 2008
+2025-01-10T14:17:33.316+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.NotificationController - Received request to send a notification
+2025-01-10T14:17:33.316+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.NotificationService - creating a notification in the service class
+2025-01-10T14:17:33.327+0100 INFO               [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] be.pxl.services.services.PostService - Received review result with postId: 2008
+2025-01-10T14:17:33.978+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:17:33.978+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:17:37.291+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:17:37.291+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:17:37.291+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: johny
+2025-01-10T14:17:37.291+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:17:38.661+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 459
+2025-01-10T14:17:38.662+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.NotificationService - deleting notification in the service class
+2025-01-10T14:18:16.856+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: johny
+2025-01-10T14:18:16.856+0100 INFO               [http-nio-8081-exec-5]         be.pxl.services.services.PostService - Getting drafts by redactor: johny
+2025-01-10T14:18:16.856+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: johny
+2025-01-10T14:18:16.856+0100 INFO               [http-nio-8081-exec-1]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: johny
+2025-01-10T14:18:19.915+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2025-01-10T14:18:19.915+0100 INFO               [http-nio-8084-exec-10]        be.pxl.services.services.ReviewService - Getting all submitted posts
+2025-01-10T14:18:22.529+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: johny
+2025-01-10T14:18:22.529+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: johny
+2025-01-10T14:18:22.529+0100 INFO               [http-nio-8081-exec-9]         be.pxl.services.services.PostService - Getting drafts by redactor: johny
+2025-01-10T14:18:22.529+0100 INFO               [http-nio-8081-exec-4]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: johny
+2025-01-10T14:18:23.117+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:18:23.117+0100 INFO               [http-nio-8081-exec-6]         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:18:24.021+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: johny
+2025-01-10T14:18:24.021+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: johny
+2025-01-10T14:18:24.022+0100 INFO               [http-nio-8081-exec-7]         be.pxl.services.services.PostService - Getting posts that need changing by redactor: johny
+2025-01-10T14:18:24.022+0100 INFO               [http-nio-8081-exec-8]         be.pxl.services.services.PostService - Getting drafts by redactor: johny
+2025-01-10T14:18:25.436+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.api.controller.ReviewController - Received request to view submitted posts
+2025-01-10T14:18:25.436+0100 INFO               [http-nio-8084-exec-1]         be.pxl.services.services.ReviewService - Getting all submitted posts
+2025-01-10T14:18:25.785+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: johny
+2025-01-10T14:18:25.785+0100 INFO               [http-nio-8081-exec-2]         be.pxl.services.services.PostService - Getting drafts by redactor: johny
+2025-01-10T14:18:25.786+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: johny
+2025-01-10T14:18:25.787+0100 INFO               [http-nio-8081-exec-10]        be.pxl.services.services.PostService - Getting posts that need changing by redactor: johny
+2025-01-10T14:18:26.103+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:18:26.103+0100 INFO               [http-nio-8081-exec-3]         be.pxl.services.services.PostService - Getting all posts

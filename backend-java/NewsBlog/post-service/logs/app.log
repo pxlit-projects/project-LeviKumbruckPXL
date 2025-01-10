@@ -1,220 +1,55 @@
-2024-12-27T15:41:59.899+0100 INFO               [main]                         be.pxl.services.PostTest      - No active profile set, falling back to 1 default profile: "default"
-2024-12-27T15:42:04.230+0100 INFO               [main]                         be.pxl.services.PostTest      - Started PostTest in 5.419 seconds (process running for 16.271)
-2024-12-27T15:42:04.816+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: test_redactor
-2024-12-27T15:42:04.817+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting posts that need changing by redactor: test_redactor
-2024-12-27T15:42:04.888+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
-2024-12-27T15:42:04.915+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
-2024-12-27T15:42:04.915+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to get drafts
-2024-12-27T15:42:04.933+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to filter posts
-2024-12-27T15:42:04.934+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting filtered posts
-2024-12-27T15:42:04.971+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to save a draft
-2024-12-27T15:42:04.984+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to update post with id 1
-2024-12-27T15:42:04.985+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to update post with id 1
-2024-12-27T15:42:04.997+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get all posts
-2024-12-27T15:42:04.997+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting all posts
-2024-12-27T15:42:05.016+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: test_redactor
-2024-12-27T15:42:05.016+0100 INFO               [main]                         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2024-12-27T15:42:05.035+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
-2024-12-27T15:42:05.035+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Original Title
-2024-12-27T15:42:05.115+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to update post with id 1
-2024-12-27T15:42:05.115+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
-2024-12-27T15:42:05.144+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
-2024-12-27T15:42:05.145+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
-2024-12-27T15:42:05.173+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to add post
-2024-12-27T15:42:05.173+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to add a post
-2024-12-27T15:42:05.185+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
-2024-12-27T15:42:05.185+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Draft Title
-2024-12-27T15:42:05.213+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 1
-2024-12-27T15:42:05.213+0100 WARN               [main]                         be.pxl.services.api.controller.NotificationController - Forbidden: User with role viewer attempted to delete notification with id 1
-2024-12-27T15:42:05.223+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: test_redactor
-2024-12-27T15:42:05.224+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to get posts that need changing
-2024-12-27T15:42:05.234+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to send draft with id 1 for review
-2024-12-27T15:42:05.234+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to send a draft to review
-2024-12-27T15:42:05.244+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
-2024-12-27T15:42:05.255+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
-2024-12-27T15:42:05.255+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
-2024-12-27T15:42:05.267+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: test_redactor
-2024-12-27T15:42:05.268+0100 WARN               [main]                         be.pxl.services.api.controller.NotificationController - Forbidden: User with role viewer attempted to get notifications for redactor test_redactor
-2024-12-27T15:42:05.278+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 1
-2024-12-27T15:42:05.278+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
-2024-12-27T15:42:05.730+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting posts that need changing by redactor: test_redactor
-2024-12-27T15:42:05.757+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting filtered posts
-2024-12-27T15:42:05.765+0100 INFO               [main]                         be.pxl.services.services.PostService - Sending draft for review with id: 1
-2024-12-27T15:42:05.777+0100 INFO               [main]                         be.pxl.services.services.PostService - Adding post to the database with title: Test Title
-2024-12-27T15:42:05.781+0100 INFO               [main]                         be.pxl.services.services.PostService - Sending draft for review with id: 1
-2024-12-27T15:42:05.785+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
-2024-12-27T15:42:05.787+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting all posts
-2024-12-27T15:42:05.789+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
-2024-12-27T15:42:05.794+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
-2024-12-27T15:42:05.796+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
-2024-12-27T15:42:05.799+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
-2024-12-27T15:42:05.856+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
-2024-12-27T15:42:05.858+0100 INFO               [main]                         be.pxl.services.services.NotificationService - creating a notification in the service class
-2024-12-27T15:42:05.863+0100 INFO               [main]                         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2024-12-27T15:42:05.865+0100 INFO               [main]                         be.pxl.services.services.NotificationService - creating a notification in the service class
-2024-12-27T15:42:05.874+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
-2024-12-27T16:11:09.894+0100 INFO               [main]                         be.pxl.services.PostTest      - No active profile set, falling back to 1 default profile: "default"
-2024-12-27T16:11:14.462+0100 INFO               [main]                         be.pxl.services.PostTest      - Started PostTest in 5.635 seconds (process running for 15.543)
-2024-12-27T16:11:14.992+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: test_redactor
-2024-12-27T16:11:14.993+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting posts that need changing by redactor: test_redactor
-2024-12-27T16:11:15.056+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
-2024-12-27T16:11:15.086+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
-2024-12-27T16:11:15.086+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to get drafts
-2024-12-27T16:11:15.103+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to filter posts
-2024-12-27T16:11:15.103+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting filtered posts
-2024-12-27T16:11:15.134+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to save a draft
-2024-12-27T16:11:15.149+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to update post with id 1
-2024-12-27T16:11:15.149+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to update post with id 1
-2024-12-27T16:11:15.161+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get all posts
-2024-12-27T16:11:15.162+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting all posts
-2024-12-27T16:11:15.179+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: test_redactor
-2024-12-27T16:11:15.179+0100 INFO               [main]                         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2024-12-27T16:11:15.194+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
-2024-12-27T16:11:15.195+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Original Title
-2024-12-27T16:11:15.246+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to update post with id 1
-2024-12-27T16:11:15.246+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
-2024-12-27T16:11:15.272+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
-2024-12-27T16:11:15.272+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
-2024-12-27T16:11:15.298+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to add post
-2024-12-27T16:11:15.298+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to add a post
-2024-12-27T16:11:15.309+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
-2024-12-27T16:11:15.309+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Draft Title
-2024-12-27T16:11:15.335+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 1
-2024-12-27T16:11:15.335+0100 WARN               [main]                         be.pxl.services.api.controller.NotificationController - Forbidden: User with role viewer attempted to delete notification with id 1
-2024-12-27T16:11:15.345+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: test_redactor
-2024-12-27T16:11:15.346+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to get posts that need changing
-2024-12-27T16:11:15.357+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to send draft with id 1 for review
-2024-12-27T16:11:15.357+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to send a draft to review
-2024-12-27T16:11:15.372+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
-2024-12-27T16:11:15.383+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
-2024-12-27T16:11:15.383+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
-2024-12-27T16:11:15.394+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: test_redactor
-2024-12-27T16:11:15.394+0100 WARN               [main]                         be.pxl.services.api.controller.NotificationController - Forbidden: User with role viewer attempted to get notifications for redactor test_redactor
-2024-12-27T16:11:15.404+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 1
-2024-12-27T16:11:15.405+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
-2024-12-27T16:11:15.856+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting posts that need changing by redactor: test_redactor
-2024-12-27T16:11:15.887+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting filtered posts
-2024-12-27T16:11:15.894+0100 INFO               [main]                         be.pxl.services.services.PostService - Sending draft for review with id: 1
-2024-12-27T16:11:15.911+0100 INFO               [main]                         be.pxl.services.services.PostService - Adding post to the database with title: Test Title
-2024-12-27T16:11:15.917+0100 INFO               [main]                         be.pxl.services.services.PostService - Sending draft for review with id: 1
-2024-12-27T16:11:15.920+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
-2024-12-27T16:11:15.923+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting all posts
-2024-12-27T16:11:15.925+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
-2024-12-27T16:11:15.930+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
-2024-12-27T16:11:15.932+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
-2024-12-27T16:11:15.933+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
-2024-12-27T16:11:16.005+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
-2024-12-27T16:11:16.007+0100 INFO               [main]                         be.pxl.services.services.NotificationService - creating a notification in the service class
-2024-12-27T16:11:16.010+0100 INFO               [main]                         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2024-12-27T16:11:16.012+0100 INFO               [main]                         be.pxl.services.services.NotificationService - creating a notification in the service class
-2024-12-27T16:11:16.019+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
-2024-12-27T16:14:38.171+0100 INFO               [main]                         be.pxl.services.PostTest      - No active profile set, falling back to 1 default profile: "default"
-2024-12-27T16:14:42.277+0100 INFO               [main]                         be.pxl.services.PostTest      - Started PostTest in 4.953 seconds (process running for 14.114)
-2024-12-27T16:14:43.156+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: test_redactor
-2024-12-27T16:14:43.157+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting posts that need changing by redactor: test_redactor
-2024-12-27T16:14:43.302+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
-2024-12-27T16:14:43.349+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
-2024-12-27T16:14:43.350+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to get drafts
-2024-12-27T16:14:43.374+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to filter posts
-2024-12-27T16:14:43.375+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting filtered posts
-2024-12-27T16:14:43.431+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to save a draft
-2024-12-27T16:14:43.449+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to update post with id 1
-2024-12-27T16:14:43.449+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to update post with id 1
-2024-12-27T16:14:43.463+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get all posts
-2024-12-27T16:14:43.463+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting all posts
-2024-12-27T16:14:43.482+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: test_redactor
-2024-12-27T16:14:43.482+0100 INFO               [main]                         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2024-12-27T16:14:43.500+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
-2024-12-27T16:14:43.501+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Original Title
-2024-12-27T16:14:43.599+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to update post with id 1
-2024-12-27T16:14:43.599+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
-2024-12-27T16:14:43.645+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
-2024-12-27T16:14:43.645+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
-2024-12-27T16:14:43.678+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to add post
-2024-12-27T16:14:43.678+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to add a post
-2024-12-27T16:14:43.692+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
-2024-12-27T16:14:43.692+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Draft Title
-2024-12-27T16:14:43.729+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 1
-2024-12-27T16:14:43.729+0100 WARN               [main]                         be.pxl.services.api.controller.NotificationController - Forbidden: User with role viewer attempted to delete notification with id 1
-2024-12-27T16:14:43.743+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: test_redactor
-2024-12-27T16:14:43.743+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to get posts that need changing
-2024-12-27T16:14:43.756+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to send draft with id 1 for review
-2024-12-27T16:14:43.756+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to send a draft to review
-2024-12-27T16:14:43.767+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
-2024-12-27T16:14:43.780+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
-2024-12-27T16:14:43.780+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
-2024-12-27T16:14:43.794+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: test_redactor
-2024-12-27T16:14:43.795+0100 WARN               [main]                         be.pxl.services.api.controller.NotificationController - Forbidden: User with role viewer attempted to get notifications for redactor test_redactor
-2024-12-27T16:14:43.807+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 1
-2024-12-27T16:14:43.807+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
-2024-12-27T16:14:44.313+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
-2024-12-27T16:14:44.326+0100 INFO               [main]                         be.pxl.services.services.NotificationService - creating a notification in the service class
-2024-12-27T16:14:44.329+0100 INFO               [main]                         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2024-12-27T16:14:44.333+0100 INFO               [main]                         be.pxl.services.services.NotificationService - creating a notification in the service class
-2024-12-27T16:14:44.337+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
-2024-12-27T16:14:44.388+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting posts that need changing by redactor: test_redactor
-2024-12-27T16:14:44.392+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting filtered posts
-2024-12-27T16:14:44.395+0100 INFO               [main]                         be.pxl.services.services.PostService - Sending draft for review with id: 1
-2024-12-27T16:14:44.410+0100 INFO               [main]                         be.pxl.services.services.PostService - Adding post to the database with title: Test Title
-2024-12-27T16:14:44.413+0100 INFO               [main]                         be.pxl.services.services.PostService - Sending draft for review with id: 1
-2024-12-27T16:14:44.416+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
-2024-12-27T16:14:44.418+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting all posts
-2024-12-27T16:14:44.420+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
-2024-12-27T16:14:44.425+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
-2024-12-27T16:14:44.428+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
-2024-12-27T16:14:44.430+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
-2024-12-27T16:23:25.624+0100 INFO               [main]                         be.pxl.services.PostTest      - No active profile set, falling back to 1 default profile: "default"
-2024-12-27T16:23:30.157+0100 INFO               [main]                         be.pxl.services.PostTest      - Started PostTest in 5.586 seconds (process running for 15.478)
-2024-12-27T16:23:30.755+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: test_redactor
-2024-12-27T16:23:30.755+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting posts that need changing by redactor: test_redactor
-2024-12-27T16:23:30.820+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
-2024-12-27T16:23:30.846+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
-2024-12-27T16:23:30.846+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to get drafts
-2024-12-27T16:23:30.866+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to filter posts
-2024-12-27T16:23:30.866+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting filtered posts
-2024-12-27T16:23:30.913+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to save a draft
-2024-12-27T16:23:30.932+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to update post with id 1
-2024-12-27T16:23:30.933+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to update post with id 1
-2024-12-27T16:23:30.950+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get all posts
-2024-12-27T16:23:30.950+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting all posts
-2024-12-27T16:23:30.973+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: test_redactor
-2024-12-27T16:23:30.973+0100 INFO               [main]                         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2024-12-27T16:23:30.993+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
-2024-12-27T16:23:30.993+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Original Title
-2024-12-27T16:23:31.045+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to update post with id 1
-2024-12-27T16:23:31.045+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
-2024-12-27T16:23:31.073+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
-2024-12-27T16:23:31.073+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
-2024-12-27T16:23:31.097+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to add post
-2024-12-27T16:23:31.097+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to add a post
-2024-12-27T16:23:31.108+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
-2024-12-27T16:23:31.108+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Draft Title
-2024-12-27T16:23:31.135+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 1
-2024-12-27T16:23:31.135+0100 WARN               [main]                         be.pxl.services.api.controller.NotificationController - Forbidden: User with role viewer attempted to delete notification with id 1
-2024-12-27T16:23:31.145+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: test_redactor
-2024-12-27T16:23:31.145+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to get posts that need changing
-2024-12-27T16:23:31.155+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to send draft with id 1 for review
-2024-12-27T16:23:31.155+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to send a draft to review
-2024-12-27T16:23:31.166+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
-2024-12-27T16:23:31.177+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
-2024-12-27T16:23:31.178+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
-2024-12-27T16:23:31.191+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: test_redactor
-2024-12-27T16:23:31.191+0100 WARN               [main]                         be.pxl.services.api.controller.NotificationController - Forbidden: User with role viewer attempted to get notifications for redactor test_redactor
-2024-12-27T16:23:31.201+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 1
-2024-12-27T16:23:31.201+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
-2024-12-27T16:23:31.695+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting posts that need changing by redactor: test_redactor
-2024-12-27T16:23:31.725+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting filtered posts
-2024-12-27T16:23:31.734+0100 INFO               [main]                         be.pxl.services.services.PostService - Sending draft for review with id: 1
-2024-12-27T16:23:31.751+0100 INFO               [main]                         be.pxl.services.services.PostService - Adding post to the database with title: Test Title
-2024-12-27T16:23:31.756+0100 INFO               [main]                         be.pxl.services.services.PostService - Sending draft for review with id: 1
-2024-12-27T16:23:31.759+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
-2024-12-27T16:23:31.761+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting all posts
-2024-12-27T16:23:31.762+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
-2024-12-27T16:23:31.767+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
-2024-12-27T16:23:31.770+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
-2024-12-27T16:23:31.771+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
-2024-12-27T16:23:31.828+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
-2024-12-27T16:23:31.830+0100 INFO               [main]                         be.pxl.services.services.NotificationService - creating a notification in the service class
-2024-12-27T16:23:31.833+0100 INFO               [main]                         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
-2024-12-27T16:23:31.838+0100 INFO               [main]                         be.pxl.services.services.NotificationService - creating a notification in the service class
-2024-12-27T16:23:31.846+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
+2025-01-10T14:15:15.538+0100 INFO               [main]                         be.pxl.services.PostTest      - No active profile set, falling back to 1 default profile: "default"
+2025-01-10T14:15:19.958+0100 INFO               [main]                         be.pxl.services.PostTest      - Started PostTest in 5.484 seconds (process running for 15.583)
+2025-01-10T14:15:20.535+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: test_redactor
+2025-01-10T14:15:20.535+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting posts that need changing by redactor: test_redactor
+2025-01-10T14:15:20.599+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
+2025-01-10T14:15:20.628+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
+2025-01-10T14:15:20.629+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to get drafts
+2025-01-10T14:15:20.646+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to filter posts
+2025-01-10T14:15:20.646+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting filtered posts
+2025-01-10T14:15:20.678+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to save a draft
+2025-01-10T14:15:20.693+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to update post with id 1
+2025-01-10T14:15:20.694+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to update post with id 1
+2025-01-10T14:15:20.706+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get all posts
+2025-01-10T14:15:20.706+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:15:20.724+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: test_redactor
+2025-01-10T14:15:20.724+0100 INFO               [main]                         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:15:20.742+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
+2025-01-10T14:15:20.742+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Original Title
+2025-01-10T14:15:20.795+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to update post with id 1
+2025-01-10T14:15:20.795+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
+2025-01-10T14:15:20.820+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
+2025-01-10T14:15:20.820+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
+2025-01-10T14:15:20.843+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to add post
+2025-01-10T14:15:20.843+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to add a post
+2025-01-10T14:15:20.853+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to save as draft
+2025-01-10T14:15:20.853+0100 INFO               [main]                         be.pxl.services.services.PostService - Saving post as draft to the database with title: Draft Title
+2025-01-10T14:15:20.879+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 1
+2025-01-10T14:15:20.879+0100 WARN               [main]                         be.pxl.services.api.controller.NotificationController - Forbidden: User with role viewer attempted to delete notification with id 1
+2025-01-10T14:15:20.890+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get posts that need changing by redactor: test_redactor
+2025-01-10T14:15:20.890+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to get posts that need changing
+2025-01-10T14:15:20.900+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to send draft with id 1 for review
+2025-01-10T14:15:20.900+0100 WARN               [main]                         be.pxl.services.api.controller.PostController - Forbidden: User with role viewer attempted to send a draft to review
+2025-01-10T14:15:20.910+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
+2025-01-10T14:15:20.921+0100 INFO               [main]                         be.pxl.services.api.controller.PostController - Received request to get drafts by redactor: test_redactor
+2025-01-10T14:15:20.922+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
+2025-01-10T14:15:20.934+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to get notifications of redactor: test_redactor
+2025-01-10T14:15:20.935+0100 WARN               [main]                         be.pxl.services.api.controller.NotificationController - Forbidden: User with role viewer attempted to get notifications for redactor test_redactor
+2025-01-10T14:15:20.949+0100 INFO               [main]                         be.pxl.services.api.controller.NotificationController - Received request to delete notification with id: 1
+2025-01-10T14:15:20.949+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
+2025-01-10T14:15:21.409+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting posts that need changing by redactor: test_redactor
+2025-01-10T14:15:21.438+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting filtered posts
+2025-01-10T14:15:21.448+0100 INFO               [main]                         be.pxl.services.services.PostService - Sending draft for review with id: 1
+2025-01-10T14:15:21.468+0100 INFO               [main]                         be.pxl.services.services.PostService - Adding post to the database with title: Test Title
+2025-01-10T14:15:21.476+0100 INFO               [main]                         be.pxl.services.services.PostService - Sending draft for review with id: 1
+2025-01-10T14:15:21.481+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
+2025-01-10T14:15:21.488+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting all posts
+2025-01-10T14:15:21.490+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
+2025-01-10T14:15:21.495+0100 INFO               [main]                         be.pxl.services.services.PostService - Updating post with id: 1
+2025-01-10T14:15:21.497+0100 INFO               [main]                         be.pxl.services.services.PostService - Getting drafts by redactor: test_redactor
+2025-01-10T14:15:21.499+0100 INFO               [main]                         be.pxl.services.services.PostService - Received review result with postId: 1
+2025-01-10T14:15:21.573+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class
+2025-01-10T14:15:21.575+0100 INFO               [main]                         be.pxl.services.services.NotificationService - creating a notification in the service class
+2025-01-10T14:15:21.579+0100 INFO               [main]                         be.pxl.services.services.NotificationService - getting notifications by redactor in the service class
+2025-01-10T14:15:21.581+0100 INFO               [main]                         be.pxl.services.services.NotificationService - creating a notification in the service class
+2025-01-10T14:15:21.591+0100 INFO               [main]                         be.pxl.services.services.NotificationService - deleting notification in the service class

@@ -1,0 +1,60 @@
+2024-12-27T15:43:05.012+0100 INFO               [main]                         be.pxl.services.CommentTest   - Starting CommentTest using Java 17.0.11 with PID 13552 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\comment-service)
+2024-12-27T15:43:05.016+0100 DEBUG              [main]                         be.pxl.services.CommentTest   - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-27T15:43:05.017+0100 INFO               [main]                         be.pxl.services.CommentTest   - No active profile set, falling back to 1 default profile: "default"
+2024-12-27T15:43:08.380+0100 INFO               [main]                         be.pxl.services.CommentTest   - Started CommentTest in 4.287 seconds (process running for 14.806)
+2024-12-27T15:43:08.613+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to edit comment with id 1
+2024-12-27T15:43:08.613+0100 INFO               [main]                         be.pxl.services.services.CommentService - Editing comment with id 1
+2024-12-27T15:43:08.677+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to delete comment with id 2
+2024-12-27T15:43:08.677+0100 WARN               [main]                         be.pxl.services.api.controller.CommentController - Forbidden: User with role viewer attempted to delete comment with id 2
+2024-12-27T15:43:08.695+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to delete comment with id 3
+2024-12-27T15:43:08.695+0100 INFO               [main]                         be.pxl.services.services.CommentService - Deleting comment with id 3
+2024-12-27T15:43:08.721+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to edit comment with id 4
+2024-12-27T15:43:08.721+0100 WARN               [main]                         be.pxl.services.api.controller.CommentController - Forbidden: User with role viewer attempted to edit comment with id 4
+2024-12-27T15:43:08.737+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1
+2024-12-27T15:43:08.737+0100 INFO               [main]                         be.pxl.services.services.CommentService - Getting comments of post with id 1
+2024-12-27T15:43:08.792+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to add comment to post with id 1
+2024-12-27T15:43:08.792+0100 WARN               [main]                         be.pxl.services.api.controller.CommentController - Forbidden: User with role viewer attempted to add a comment
+2024-12-27T15:43:08.800+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to add comment to post with id 1
+2024-12-27T15:43:08.800+0100 INFO               [main]                         be.pxl.services.services.CommentService - Adding comment to post with id 1
+2024-12-27T16:11:46.954+0100 INFO               [main]                         be.pxl.services.CommentTest   - Starting CommentTest using Java 17.0.11 with PID 29848 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\comment-service)
+2024-12-27T16:11:46.955+0100 DEBUG              [main]                         be.pxl.services.CommentTest   - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-27T16:11:46.956+0100 INFO               [main]                         be.pxl.services.CommentTest   - No active profile set, falling back to 1 default profile: "default"
+2024-12-27T16:11:50.417+0100 INFO               [main]                         be.pxl.services.CommentTest   - Started CommentTest in 4.332 seconds (process running for 15.108)
+2024-12-27T16:11:50.645+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to edit comment with id 1
+2024-12-27T16:11:50.645+0100 INFO               [main]                         be.pxl.services.services.CommentService - Editing comment with id 1
+2024-12-27T16:11:50.713+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to delete comment with id 2
+2024-12-27T16:11:50.713+0100 WARN               [main]                         be.pxl.services.api.controller.CommentController - Forbidden: User with role viewer attempted to delete comment with id 2
+2024-12-27T16:11:50.731+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to delete comment with id 3
+2024-12-27T16:11:50.732+0100 INFO               [main]                         be.pxl.services.services.CommentService - Deleting comment with id 3
+2024-12-27T16:11:50.758+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to edit comment with id 4
+2024-12-27T16:11:50.758+0100 WARN               [main]                         be.pxl.services.api.controller.CommentController - Forbidden: User with role viewer attempted to edit comment with id 4
+2024-12-27T16:11:50.775+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1
+2024-12-27T16:11:50.775+0100 INFO               [main]                         be.pxl.services.services.CommentService - Getting comments of post with id 1
+2024-12-27T16:11:50.824+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to add comment to post with id 1
+2024-12-27T16:11:50.824+0100 WARN               [main]                         be.pxl.services.api.controller.CommentController - Forbidden: User with role viewer attempted to add a comment
+2024-12-27T16:11:50.833+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to add comment to post with id 1
+2024-12-27T16:11:50.833+0100 INFO               [main]                         be.pxl.services.services.CommentService - Adding comment to post with id 1
+2024-12-27T16:16:52.024+0100 INFO               [main]                         be.pxl.services.CommentTest   - Starting CommentTest using Java 21.0.2 with PID 2144 (started by kumbr in C:\Users\kumbr\Documents\3TIN\Fullstack Java\Project\project-LeviKumbruckPXL\backend-java\NewsBlog\comment-service)
+2024-12-27T16:16:52.024+0100 DEBUG              [main]                         be.pxl.services.CommentTest   - Running with Spring Boot v3.3.5, Spring v6.1.14
+2024-12-27T16:16:52.025+0100 INFO               [main]                         be.pxl.services.CommentTest   - No active profile set, falling back to 1 default profile: "default"
+2024-12-27T16:16:55.319+0100 INFO               [main]                         be.pxl.services.CommentTest   - Started CommentTest in 4.008 seconds (process running for 13.957)
+2024-12-27T16:16:55.808+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to edit comment with id 1
+2024-12-27T16:16:55.808+0100 INFO               [main]                         be.pxl.services.services.CommentService - Editing comment with id 1
+2024-12-27T16:16:55.874+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to delete comment with id 2
+2024-12-27T16:16:55.874+0100 WARN               [main]                         be.pxl.services.api.controller.CommentController - Forbidden: User with role viewer attempted to delete comment with id 2
+2024-12-27T16:16:55.890+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to delete comment with id 3
+2024-12-27T16:16:55.891+0100 INFO               [main]                         be.pxl.services.services.CommentService - Deleting comment with id 3
+2024-12-27T16:16:55.913+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to edit comment with id 4
+2024-12-27T16:16:55.913+0100 WARN               [main]                         be.pxl.services.api.controller.CommentController - Forbidden: User with role viewer attempted to edit comment with id 4
+2024-12-27T16:16:55.927+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to get comments of post with id 1
+2024-12-27T16:16:55.927+0100 INFO               [main]                         be.pxl.services.services.CommentService - Getting comments of post with id 1
+2024-12-27T16:16:55.970+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to add comment to post with id 1
+2024-12-27T16:16:55.970+0100 WARN               [main]                         be.pxl.services.api.controller.CommentController - Forbidden: User with role viewer attempted to add a comment
+2024-12-27T16:16:55.979+0100 INFO               [main]                         be.pxl.services.api.controller.CommentController - Received request to add comment to post with id 1
+2024-12-27T16:16:55.979+0100 INFO               [main]                         be.pxl.services.services.CommentService - Adding comment to post with id 1
+2024-12-27T16:16:56.702+0100 INFO               [main]                         be.pxl.services.services.CommentService - Editing comment with id 1
+2024-12-27T16:16:56.734+0100 INFO               [main]                         be.pxl.services.services.CommentService - Getting comments of post with id 1
+2024-12-27T16:16:56.741+0100 INFO               [main]                         be.pxl.services.services.CommentService - Deleting comment with id 1
+2024-12-27T16:16:56.749+0100 INFO               [main]                         be.pxl.services.services.CommentService - Deleting comment with id 1
+2024-12-27T16:16:56.753+0100 INFO               [main]                         be.pxl.services.services.CommentService - Editing comment with id 1
+2024-12-27T16:16:56.756+0100 INFO               [main]                         be.pxl.services.services.CommentService - Adding comment to post with id 1
